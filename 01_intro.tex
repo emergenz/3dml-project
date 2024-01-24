@@ -3,3 +3,9 @@
 
 % To insert a figure: \input{figs/template}
 % Or table: \input{tables/template}
+
+While humans can easily infer the 3D structure as well as the complete (panoptic) semantics of a scene from a single image, this task has been a longstanding
+challenge in the field of computer vision. The task fundamentally prerequisites learning a strong prior of the 3D world. Traditional methods have made significant strides,
+from generating geometrically coherent structures \citep{denninger20203d, shin20193d} to learning different instance semantics \citep{gkioxari2019mesh, kuo2020mask2cad,
+nie2020total3dunderstanding}. More recent approaches directly learn the 3D panoptic semantics as a whole \citep{dahnert2021panoptic, zhang2023uni}, yet they fall short in capturing the intricate details and nuances at the object level.
+This paper introduces a novel approach to bridge this gap by integrating a specialized object-level model into the reconstruction process, thereby leveraging the specialized model's object-priors.
