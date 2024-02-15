@@ -15,11 +15,11 @@ has seen a number of advancements, culminating in the task of single-view 3D rec
 \citet{wu2018learning} note that the task of single-view 3D reconstruction is non-deterministic, as there are many 3D shapes that can explain a given single-view input, and propose
 to use shape priors to shape the solution space such that the reconstructed shapes are realistic, but not necessarily the ground truth.
 
-\paragraph{3D scene understanding and panoptic reconstruction}
+\paragraph{3D scene understanding}
+The task of 3D scene understanding and panoptic reconstruction is analogous to its 2D counterpart and aims to infer the 3D structure and semantics of a scene, including the 3D layout, object instances, and their 3D shapes from images \citep{dahnert2021panoptic} or noisy geometry \citep{hou20193d, hou2020revealnet}.
+\citet{dahnert2021panoptic} propose a method -- henceforth called \emph{Panoptic 3D} -- to jointly solve the tasks of 3D scene understanding and single-view 3D reconstruction by lifting features produced by a 2D backbone into a 3D volume of the camera frustrum, and jointly optimizing for geometric reconstruction as well as semantic and instance segmentation. 
 
 \paragraph{Modality-conditioned shape generation}
 3D generative models represent objects in a variety of modalities, including point clouds \citep{achlioptas2018learning, luo2021diffusion}, occupancy grids \citep{mescheder2019occupancy}, meshes \citep{mo2019structurenet}, and signed distance functions \citep{park2019deepsdf}.
 Furthermore, these models can also be distinguished by the type of input they take, such as incomplete shapes \citep{dai2017shape}, images \citep{fan2017point}, text \citep{liu2022towards, zhao2023michelangelo}, or other modalities \citep{Zhou_2021_CVPR}. 
 Notably, \citet{cheng2023sdfusion} propose \emph{SDFusion}, a 3D object reconstruction method conditioned on images, text and geometrical input.
-
-\paragraph{DATASET}
