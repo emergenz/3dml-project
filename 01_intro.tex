@@ -9,3 +9,16 @@ challenge in the field of computer vision. The task fundamentally prerequisites 
 from generating geometrically coherent structures \citep{denninger20203d, shin20193d} to learning different instance semantics \citep{gkioxari2019mesh, kuo2020mask2cad,
 nie2020total3dunderstanding}. More recent approaches directly learn the 3D panoptic semantics as a whole \citep{dahnert2021panoptic, zhang2023uni}, yet they fall short in capturing the intricate details and nuances at the object level.
 This paper introduces a novel approach to bridge this gap by integrating a specialized object-level model into the reconstruction process, thereby leveraging the specialized model's object-priors.
+
+Our approach models panoptic 3D reconstruction as a two-stage problem. We first use the model of \citet{dahnert2021panoptic} to create an initial reconstruction. Then, we leverage the instance masks to extract the object geometries out of the reconstructed scene. We input each of the extracted objects along with cropped images from the scene and text labels into a diffusion model \citep{cheng2023sdfusion} to refine the rough object-level geometries.
+Finally, we integrate the refined object geometries back into the initial scene reconstruction to obtain a complete and refined panoptic 3D scene reconstruction.
+
+In summary, our main contributions are as follows:
+\begin{itemize}
+    \item We propose a novel approach to panoptic 3D reconstruction involving an inference pipeline that leverages object-level reconstruction models to refine the output of a 3D scene reconstruction backbone.
+    \item We qualitatively demonstrate the effectiveness of our approach on the 3D-Front \citep{fu20213d} dataset, showing significant improvements over the state-of-the-art.
+    \item We show that fine-tuning SDFusion \citep{cheng2023sdfusion} on the input scene's object distribution (in our case the 3D-Future dataset \citep{fu20213e}) significantly improves the quality of the refined objects.
+    \item We propose \emph{weighted masking}, a novel technique to integrate masking uncertainty into the object-level reconstruction process.
+    \item We introduce a conceptually simple yet effective method for shape alignment, which outperforms rigid alignment methods in our experiments.
+    \item We openly release our model code, training and inference pipelines, as well as our newly constructed variation of the 3D-Front dataset to facilitate future research in the field.
+\end{itemize}
