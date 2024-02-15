@@ -1,3 +1,32 @@
 \section{Method}
 \label{sec:method}
 
+Given a 2D RGB image, we leverage Panoptic [1] to predict the geometry within the camera frustum of the image, as well as the corresponding 3D semantic- and instance labels.
+Since panoptic already predicts instances in 2D and uses this as a prior for 3D instance segmentation, we have access to both 2D and 3D instances.
+We use the 2D instance mask to crop out an RGB image of the detected object and the 3D instance mask to crop out the reconstructed object shape.
+Then we input the 3D shape, the 2D cropped image and the semantic label (as text) into the SDFusion model.
+
+The SDFusion model uses task specific encoder to encode the conditions (the 2D image and the text) and separately brings the 3D shape into the latent space, in which it applies the latent diffusion process.
+After applying noise to the latent code, the condition embeddings are concatenated and cross-attended to in the denoising network, in order to modulate the diffusion process.
+A decoder then reconstructs the shape. The output of SDFusion is front-facing and potentially not matching the orientation of the object in the reconstructed 3D scene.
+Therefore we employ a registration algorithm to align the reconstructed objects back into the scene.
+
+\paragraph{ Panoptic 3D Scene Reconstruction}
+Panoptic [1] takes a single RGB image and reconstructs geometry and predicts semantic- and instance segmentation for the corresponding geometry.
+Panoptic employs a ResNet-18 encoder to compute features of an RGB image.
+These features are used to predict both a 2D depth map and 2D instance masks using a depth decoder and Mask R-CNN on the ResNet-18 output.
+The depth map is used to backproject the features into a sparse volumetric grid and the 2D instance mask is propagated to serve as a seed for the 3D instance mask prediction.
+A U-Net architecture takes the sparse backprojection to predict occupancy, distance field, semantic- and instance labels for each occupancy.
+
+\paragraph{SDFusion}
+SDFusion [2] takes a signed distance field as main input and takes an RGB image as well as a text as input to condition the main input on.
+A variational autoencoder compresses the signed distance field into a latent space representation.
+Within the latent space, a diffusion process is employed which gradually diffuses the latent code.
+Before denoising, the conditions are encoded and concatenated to the noisy latent code.
+Then, a 3D UNet is used to denoise the latent code and an attention mechanism is used to allow the denoising network to attend to the conditions during denoising.
+The reconstructed latent code is then decoded using the decoder of the variational autoencoder. The result is a reconstructed signed distance field.
+
+\paragraph{Registration}
+For the registration we use a method that aligns the reconstructed front-facing SDFusion output.
+We first align the reconstructed output to the floor in our 3D scene and then rotate in 16 different, uniform positions around its y-axis.
+We select the orientation which leads to the smallest per-point difference.
