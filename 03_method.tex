@@ -1,32 +1,24 @@
 \section{Method}
 \label{sec:method}
 
-Given a 2D RGB image, we leverage Panoptic [1] to predict the geometry within the camera frustum of the image, as well as the corresponding 3D semantic- and instance labels.
-Since panoptic already predicts instances in 2D and uses this as a prior for 3D instance segmentation, we have access to both 2D and 3D instances.
-We use the 2D instance mask to crop out an RGB image of the detected object and the 3D instance mask to crop out the reconstructed object shape.
-Then we input the 3D shape, the 2D cropped image and the semantic label (as text) into the SDFusion model.
+We leverage Panoptic 3D \cite{dahnert2021panoptic} to predict the camera frustum geometry and associated 3D semantic and instance labels within the image. This model provides us with both 2D and 3D representations of detected objects. To achieve this, Panoptic employs a ResNet-18 encoder for feature extraction from the input image. Subsequently, these features are utilized to predict both a 2D depth map and 2D instance mask through a depth encoder and a Mask R-CNN applied directly to the ResNet-18 features. 
 
-The SDFusion model uses task specific encoder to encode the conditions (the 2D image and the text) and separately brings the 3D shape into the latent space, in which it applies the latent diffusion process.
-After applying noise to the latent code, the condition embeddings are concatenated and cross-attended to in the denoising network, in order to modulate the diffusion process.
-A decoder then reconstructs the shape. The output of SDFusion is front-facing and potentially not matching the orientation of the object in the reconstructed 3D scene.
-Therefore we employ a registration algorithm to align the reconstructed objects back into the scene.
+During training we learn the 2D output utilizing a proxy loss for both depth estimation and instance segmentation. Therefore, the total loss can be written as [loss function goes here].
 
-\paragraph{ Panoptic 3D Scene Reconstruction}
-Panoptic [1] takes a single RGB image and reconstructs geometry and predicts semantic- and instance segmentation for the corresponding geometry.
-Panoptic employs a ResNet-18 encoder to compute features of an RGB image.
-These features are used to predict both a 2D depth map and 2D instance masks using a depth decoder and Mask R-CNN on the ResNet-18 output.
-The depth map is used to backproject the features into a sparse volumetric grid and the 2D instance mask is propagated to serve as a seed for the 3D instance mask prediction.
-A U-Net architecture takes the sparse backprojection to predict occupancy, distance field, semantic- and instance labels for each occupancy.
+The depth map facilitates the backprojection of features into a sparse volumetric grid, and the 2D instance mask is propagated to serve as a seed for the 3D instance mask prediction. Finally, a U-Net architecture processes the sparse backprojection to forecast occupancy, distance field, and both semantic and instance labels for each individual occupancy within the grid.
 
-\paragraph{SDFusion}
-SDFusion [2] takes a signed distance field as main input and takes an RGB image as well as a text as input to condition the main input on.
-A variational autoencoder compresses the signed distance field into a latent space representation.
-Within the latent space, a diffusion process is employed which gradually diffuses the latent code.
-Before denoising, the conditions are encoded and concatenated to the noisy latent code.
-Then, a 3D UNet is used to denoise the latent code and an attention mechanism is used to allow the denoising network to attend to the conditions during denoising.
-The reconstructed latent code is then decoded using the decoder of the variational autoencoder. The result is a reconstructed signed distance field.
+To learn the 3D reconstruction, we utilize a binary cross entropy loss for the occupancy prediction at different hierarchy levels and the l1 loss for the distance field on the final hierarchy level. The 3D loss can be formalized as [loss goes here].
 
-\paragraph{Registration}
-For the registration we use a method that aligns the reconstructed front-facing SDFusion output.
-We first align the reconstructed output to the floor in our 3D scene and then rotate in 16 different, uniform positions around its y-axis.
-We select the orientation which leads to the smallest per-point difference.
+For each detected object, we use the 2D instance mask to extract RGB crops of the input image, and the 3D instance mask to extract the corresponding 3D geometry.
+The extracted geometry along with the semantic label are subsequently input into the SDFusion model for shape reconstruction.
+
+SDFusion \cite{cheng2023sdfusion} utilizes a signed distance field as its primary input and, additionally leverages an RGB image and a textual representation as conditional inputs to guide the reconstruction process. To this end, SDFusion employs task-specific encoders (\citep{radford2021learning, devlin2018bert}) to process the 2D image and text embeddings, while simultaneously embedding the 3D shape into a latent space using a pre-trained vector quantized variational autoencoder (VQ-VAE) \citep{oord2017neural}. Noise is then introduced to the shape latent via forward diffusion, which is followed by a concatenation of the conditional embeddings. This serves as input to the 3D U-Net \citep{ronneberger2015u} denoising network which reconstructs the latent code. Within the denoising U-Net, cross-attention is applied along the concatenated latent code to modulate the denoising process. Ultimately, the VQ-VAE decoder reconstructs the shape.
+
+The output of SDFusion is front-facing and might not align with the object's orientation in the reconstructed 3D scene. To address this, we employ a registration algorithm to ensure proper alignment of the reconstructed objects within the scene. This process consists of 3 key steps:
+\begin{enumerate}
+    \item \textbf{Floor Alignment:} To establish a common reference frame and facilitate subsequent orientation, we align the reconstructed object with the floor plane of the 3D scene.
+    
+    \item \textbf{Rotational Optimization:} Following floor alignment, the object is systematically rotated through 16 discrete, uniformly distributed positions around its y-axis. This exploration covers a diverse range of potential orientations.
+    
+    \item \textbf{Selection based on Similarity:} The final step involves selecting the orientation that minimizes the per-point difference between the reconstructed object (mesh) and the corresponding elements within the scene (point) utilizing \cite{trimesh}. This metric serves as a quantitative measure of alignment accuracy.
+\end{enumerate}

@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: _main.aux
+The style file: ieeenat_fullname.bst
+Database file #1: 11_references.bib
+Warning--I didn't find a database entry for "trimesh"
+Warning--empty publisher in snavely2006photo
+You've used 49 entries,
+            2708 wiz_defined-function locations,
+            910 strings with 16191 characters,
+and the built_in function-call counts, 35221 in all, are:
+= -- 3121
+> -- 2565
+< -- 41
++ -- 858
+- -- 807
+* -- 2944
+:= -- 5128
+add.period$ -- 155
+call.type$ -- 49
+change.case$ -- 413
+chr.to.int$ -- 47
+cite$ -- 99
+duplicate$ -- 1486
+empty$ -- 2379
+format.name$ -- 862
+if$ -- 7615
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 49
+newline$ -- 253
+num.names$ -- 196
+pop$ -- 893
+preamble$ -- 1
+purify$ -- 364
+quote$ -- 0
+skip$ -- 1360
+stack$ -- 0
+substring$ -- 1571
+swap$ -- 480
+text.length$ -- 38
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 539
+warning$ -- 1
+while$ -- 258
+width$ -- 0
+write$ -- 645
+(There were 2 warnings)

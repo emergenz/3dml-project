@@ -1,0 +1,4 @@
+\section{Limitations}
+\label{sec:limitations}
+
+We conducted separate training for both the Panoptic model and the SDFusion model. To increase the performance we advocate for an end-to-end training approach. Given that the Panoptic model outputs occupancies and a distance field in terms of geometry, a differentiable transformation to a signed distance field is necessary to allow end-to-end training. This integration would enable SDFusion to effectively backpropagate gradients and directly learn from SDFusions noisy inputs. Another constraint lies in our registration algorithm, which selects one out of 16 predefined positions, which can pose a challenge in achieving perfect alignment relying on the initial orientation of the reconstructed objects. A more robust alignment strategy can enhance the overall quality of the final scene.
