@@ -54,8 +54,11 @@
 \backcite {Denninger2023}{{2}{2}{section*.6}}
 \backcite {dahnert2021panoptic}{{2}{2}{section*.6}}
 \backcite {dahnert2021panoptic}{{2}{3}{section.3}}
-\backcite {cheng2023sdfusion}{{2}{3}{section.3}}
-\backcite {devlin2018bert}{{2}{3}{section.3}}
-\backcite {radford2021learning}{{2}{3}{section.3}}
-\backcite {oord2017neural}{{2}{3}{section.3}}
-\backcite {ronneberger2015u}{{2}{3}{section.3}}
+\backcite {cheng2023sdfusion}{{3}{3}{equation.3.5}}
+\backcite {devlin2018bert}{{3}{3}{equation.3.5}}
+\backcite {radford2021learning}{{3}{3}{equation.3.5}}
+\backcite {oord2017neural}{{3}{3}{equation.3.5}}
+\backcite {ronneberger2015u}{{3}{3}{equation.3.5}}
+\backcite {dahnert2021panoptic}{{3}{1}{figure.caption.9}}
+\backcite {dahnert2021panoptic}{{3}{4}{section*.7}}
+\backcite {dahnert2021panoptic}{{3}{4}{section*.7}}
