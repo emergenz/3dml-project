@@ -16,9 +16,8 @@ Finally, we integrate the refined object geometries back into the initial scene 
 In summary, our main contributions are as follows:
 \begin{itemize}
     \item We propose a novel approach to panoptic 3D reconstruction involving an inference pipeline that leverages object-level reconstruction models to refine the output of a 3D scene reconstruction backbone.
+    \item We generate a new synthetic 3D-Front dataset comprising over 24,000 samples, each annotated with both 2D and 3D ground truth data.
     \item We qualitatively demonstrate the effectiveness of our approach on the 3D-Front \citep{fu20213d} dataset, showing significant improvements over the state-of-the-art.
     \item We show that fine-tuning SDFusion \citep{cheng2023sdfusion} on the input scene's object distribution (in our case the 3D-Future dataset \citep{fu20213e}) significantly improves the quality of the refined objects.
-    \item We propose \emph{weighted masking}, a novel technique to integrate masking uncertainty into the object-level reconstruction process.
     \item We introduce a conceptually simple yet effective method for shape alignment, which outperforms rigid alignment methods in our experiments.
-    \item We openly release our model code, training and inference pipelines, as well as our newly constructed variation of the 3D-Front dataset to facilitate future research in the field.
 \end{itemize}

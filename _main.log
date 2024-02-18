@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.12.31)  18 FEB 2024 18:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.12.31)  18 FEB 2024 18:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -610,234 +610,84 @@ File: omspcr.fd
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
  (00_abstract.tex) (01_intro.tex
-
-Package natbib Warning: Citation `denninger20203d' on page 1 undefined on input line 9.
-
-
-Package natbib Warning: Citation `shin20193d' on page 1 undefined on input line 9.
-
-
-Package natbib Warning: Citation `gkioxari2019mesh' on page 1 undefined on input line 10.
-
-
-Package natbib Warning: Citation `kuo2020mask2cad' on page 1 undefined on input line 10.
-
-
-Package natbib Warning: Citation `nie2020total3dunderstanding' on page 1 undefined on input line 10.
-
-
-Package natbib Warning: Citation `dahnert2021panoptic' on page 1 undefined on input line 10.
-
-
-Package natbib Warning: Citation `zhang2023uni' on page 1 undefined on input line 10.
-
-
-Package natbib Warning: Citation `dahnert2021panoptic' on page 1 undefined on input line 13.
-
-
-Package natbib Warning: Citation `cheng2023sdfusion' on page 1 undefined on input line 13.
-
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 18.
-(/Users/antonio/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1ptm.fd
+ (/Users/antonio/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-
-Package natbib Warning: Citation `fu20213d' on page 1 undefined on input line 19.
-
-
-Package natbib Warning: Citation `cheng2023sdfusion' on page 1 undefined on input line 20.
-
-
-Package natbib Warning: Citation `fu20213e' on page 1 undefined on input line 20.
-
-) (02_related.tex
-
-Package natbib Warning: Citation `kirillov2019panoptic' on page 1 undefined on input line 6.
-
-
-Package natbib Warning: Citation `kirillov2019panoptic' on page 1 undefined on input line 6.
-
-
-Package natbib Warning: Citation `wang2020axial' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `cheng2020panoptic' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `mohan2021efficientps' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `Li_2021_CVPR' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `Wang_2021_CVPR' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `Li_2022_CVPR' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `Kundu_2022_CVPR' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `Cheng_2022_CVPR' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `Yu_2022_CVPR' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `Xu_2023_CVPR' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `Chen_2023_ICCV' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `li2023mask' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `yu2023convolutions' on page 1 undefined on input line 7.
-
-
-Package natbib Warning: Citation `Jain_2023_CVPR' on page 1 undefined on input line 8.
-
-
-Package natbib Warning: Citation `snavely2006photo' on page 1 undefined on input line 11.
-
-
-Package natbib Warning: Citation `choy20163d' on page 1 undefined on input line 12.
-
-
-Package natbib Warning: Citation `wang2018pixel2mesh' on page 1 undefined on input line 12.
-
-
-Package natbib Warning: Citation `mescheder2019occupancy' on page 1 undefined on input line 12.
-
-
-Package natbib Warning: Citation `huang2019perspectivenet' on page 1 undefined on input line 12.
-
-
-Package natbib Warning: Citation `shin20193d' on page 1 undefined on input line 12.
-
-
-Package natbib Warning: Citation `denninger20203d' on page 1 undefined on input line 12.
-
-
-Package natbib Warning: Citation `nie2020total3dunderstanding' on page 1 undefined on input line 12.
-
-
-Package natbib Warning: Citation `wu2018learning' on page 1 undefined on input line 15.
-
-
-Package natbib Warning: Citation `dahnert2021panoptic' on page 1 undefined on input line 19.
-
-
-Package natbib Warning: Citation `hou20193d' on page 1 undefined on input line 19.
-
-
-Package natbib Warning: Citation `hou2020revealnet' on page 1 undefined on input line 19.
-
-
-Package natbib Warning: Citation `dahnert2021panoptic' on page 1 undefined on input line 20.
-
-[1{/Users/antonio/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}
-
-
-]
-
-Package natbib Warning: Citation `achlioptas2018learning' on page 2 undefined on input line 23.
-
-
-Package natbib Warning: Citation `luo2021diffusion' on page 2 undefined on input line 23.
-
-
-Package natbib Warning: Citation `mescheder2019occupancy' on page 2 undefined on input line 23.
-
-
-Package natbib Warning: Citation `mo2019structurenet' on page 2 undefined on input line 23.
-
-
-Package natbib Warning: Citation `park2019deepsdf' on page 2 undefined on input line 23.
-
-
-Package natbib Warning: Citation `dai2017shape' on page 2 undefined on input line 24.
-
-
-Package natbib Warning: Citation `fan2017point' on page 2 undefined on input line 24.
-
-
-Package natbib Warning: Citation `liu2022towards' on page 2 undefined on input line 24.
-
-
-Package natbib Warning: Citation `zhao2023michelangelo' on page 2 undefined on input line 24.
-
-
-Package natbib Warning: Citation `Zhou_2021_CVPR' on page 2 undefined on input line 24.
-
-
-Package natbib Warning: Citation `cheng2023sdfusion' on page 2 undefined on input line 25.
-
-
-Package natbib Warning: Citation `dai2017scannet' on page 2 undefined on input line 28.
-
-
-Package natbib Warning: Citation `straub2019replica' on page 2 undefined on input line 28.
-
-
-Package natbib Warning: Citation `fu20213d' on page 2 undefined on input line 29.
-
-
-Package natbib Warning: Citation `fu20213e' on page 2 undefined on input line 30.
-
-) (03_method.tex
-
-Package natbib Warning: Citation `dahnert2021panoptic' on page 2 undefined on input line 4.
-
-
-Package natbib Warning: Citation `radford2021learning' on page 2 undefined on input line 8.
-
-
-Package natbib Warning: Citation `devlin2018bert' on page 2 undefined on input line 8.
-
-
-Package natbib Warning: Citation `oord2017neural' on page 2 undefined on input line 8.
-
-
-Package natbib Warning: Citation `ronneberger2015u' on page 2 undefined on input line 8.
-
-
-Package natbib Warning: Citation `dahnert2021panoptic' on page 2 undefined on input line 13.
-
-
-Package natbib Warning: Citation `cheng2023sdfusion' on page 2 undefined on input line 16.
-
-[2]) (04_results.tex) (05_limitations.tex)
-No file _main.bbl.
-
-Package natbib Warning: There were undefined citations.
-
-
-Package caption Warning: Unused \captionsetup[sub] on input line 23.
-See the caption package documentation for explanation.
-
-[3] (_main.aux)
+)) (02_related.tex [1{/Users/antonio/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}
+
+
+]) (03_method.tex [2]) (04_results.tex
+<figs/depth_ours.png, id=187, 115.632pt x 86.724pt>
+File: figs/depth_ours.png Graphic file (type png)
+<use figs/depth_ours.png>
+Package pdftex.def Info: figs/depth_ours.png  used on input line 31.
+(pdftex.def)             Requested size: 106.71045pt x 80.03712pt.
+<figs/depth_pan.png, id=189, 115.632pt x 86.724pt>
+File: figs/depth_pan.png Graphic file (type png)
+<use figs/depth_pan.png>
+Package pdftex.def Info: figs/depth_pan.png  used on input line 37.
+(pdftex.def)             Requested size: 106.71045pt x 80.03712pt.
+<figs/depthply_ours.png, id=190, 1014.79124pt x 615.80063pt>
+File: figs/depthply_ours.png Graphic file (type png)
+<use figs/depthply_ours.png>
+Package pdftex.def Info: figs/depthply_ours.png  used on input line 47.
+(pdftex.def)             Requested size: 106.71045pt x 64.75023pt.
+<figs/depthply_pan.png, id=191, 1014.79124pt x 615.80063pt>
+File: figs/depthply_pan.png Graphic file (type png)
+<use figs/depthply_pan.png>
+Package pdftex.def Info: figs/depthply_pan.png  used on input line 53.
+(pdftex.def)             Requested size: 106.71045pt x 64.75023pt.
+) (05_limitations.tex [3 <./figs/depth_ours.png> <./figs/depth_pan.png> <./figs/depthply_ours.png (PNG copy)> <./figs/depthply_pan.png (PNG copy)>]) (_main.bbl (_main.brf)
+\tf@brf=\write4
+\openout4 = `_main.brf'.
+
+
+Overfull \hbox (0.6289pt too wide) in paragraph at lines 73--73
+\OT1/ptm/m/it/9 (-20) Advances in Neural Information Processing Systems\OT1/ptm/m/n/9 (-20) , 34:8282--
+ []
+
+[4] [5]) [6
+
+] (_main.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
-Package rerunfilecheck Info: File `_main.out' has not changed.
-(rerunfilecheck)             Checksum: ABA37A5651265CB7C5FAD9C5CBD389FB;668.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `_main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `_main.out':
+(rerunfilecheck)             Before: 5C247D655324BA50E290DADCCB135575;525
+(rerunfilecheck)             After:  00D6CA12A91DC3B861600F4F6739985E;1356.
+
+Package rerunfilecheck Warning: File `_main.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `_main.brf':
+(rerunfilecheck)             Before: 23B6B58FC0D1109950FC6D80A7E0872D;3515
+(rerunfilecheck)             After:  5726D44F12AA0F15A111AD4BE5003B55;3515.
  ) 
 Here is how much of TeX's memory you used:
- 18308 strings out of 474495
- 311095 string characters out of 5741079
- 1947457 words of memory out of 5000000
- 40067 multiletter control sequences out of 15000+600000
- 583550 words of font info for 198 fonts, out of 8000000 for 9000
+ 19034 strings out of 474495
+ 323618 string characters out of 5741079
+ 1950457 words of memory out of 5000000
+ 40518 multiletter control sequences out of 15000+600000
+ 606248 words of font info for 351 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,10n,99p,1095b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc}</Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on _main.pdf (3 pages, 116962 bytes).
+ 95i,11n,99p,1140b,712s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{section.6} has been referenced but does not exist, replaced by a fixed one
+
+{/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc}</Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
+Output written on _main.pdf (6 pages, 793090 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 33321 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
+ 56413 words of extra memory for PDF output out of 61914 (max. 10000000)
 
