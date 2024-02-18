@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.31)  18 FEB 2024 10:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.31)  18 FEB 2024 14:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,50 +702,42 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 
 ])
-(./03_method.tex [2]
-
-Package natbib Warning: Citation `trimesh' on page 3 undefined on input line 48
-.
-
-) (./04_results.tex
-<figs/depth_ours.png, id=167, 115.632pt x 86.724pt>
+(./03_method.tex [2]) (./04_results.tex
+<figs/depth_ours.png, id=187, 115.632pt x 86.724pt>
 File: figs/depth_ours.png Graphic file (type png)
 <use figs/depth_ours.png>
 Package pdftex.def Info: figs/depth_ours.png  used on input line 31.
 (pdftex.def)             Requested size: 106.71045pt x 80.03712pt.
-<figs/depth_pan.png, id=169, 115.632pt x 86.724pt>
+<figs/depth_pan.png, id=189, 115.632pt x 86.724pt>
 File: figs/depth_pan.png Graphic file (type png)
 <use figs/depth_pan.png>
 Package pdftex.def Info: figs/depth_pan.png  used on input line 37.
 (pdftex.def)             Requested size: 106.71045pt x 80.03712pt.
-<figs/depthply_ours.png, id=170, 1014.79124pt x 615.80063pt>
+<figs/depthply_ours.png, id=190, 1014.79124pt x 615.80063pt>
 File: figs/depthply_ours.png Graphic file (type png)
 <use figs/depthply_ours.png>
 Package pdftex.def Info: figs/depthply_ours.png  used on input line 47.
 (pdftex.def)             Requested size: 106.71045pt x 64.75023pt.
-<figs/depthply_pan.png, id=171, 1014.79124pt x 615.80063pt>
+<figs/depthply_pan.png, id=191, 1014.79124pt x 615.80063pt>
 File: figs/depthply_pan.png Graphic file (type png)
 <use figs/depthply_pan.png>
 Package pdftex.def Info: figs/depthply_pan.png  used on input line 53.
 (pdftex.def)             Requested size: 106.71045pt x 64.75023pt.
-) (./05_limitations.tex) [3 <./figs/depth_ours.png> <./figs/depth_pan.png> <./f
-igs/depthply_ours.png (PNG copy)> <./figs/depthply_pan.png (PNG copy)>] (./10_c
-onclusion.tex) (./_main.bbl (./_main.brf)
+) (./05_limitations.tex)
+(./10_conclusion.tex) (./_main.bbl (./_main.brf)
 \tf@brf=\write4
 \openout4 = `_main.brf'.
 
-
-Overfull \hbox (0.6289pt too wide) in paragraph at lines 62--62
+ [3 <./figs/depth_ours.png> <./figs/depth_pan.png> <./figs/depthply_ours.png (P
+NG copy)> <./figs/depthply_pan.png (PNG copy)>]
+Overfull \hbox (0.6289pt too wide) in paragraph at lines 73--73
 \OT1/ptm/m/it/9 (-20) Advances in Neural Information Processing Systems\OT1/ptm
 /m/n/9 (-20) , 34:8282--
  []
 
 [4] [5])
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
-[6
+ [6
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
@@ -753,18 +745,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `_main.out' has not changed.
-(rerunfilecheck)             Checksum: B4186D097F75C70E4C58293CF5AC12D9;280.
+(rerunfilecheck)             Checksum: 5C247D655324BA50E290DADCCB135575;525.
 Package rerunfilecheck Info: File `_main.brf' has not changed.
-(rerunfilecheck)             Checksum: 81B039CB2EADD4D2CA49B8995DF539E3;3223.
+(rerunfilecheck)             Checksum: E539B028827D42C3DFBC8611C808284E;3397.
  ) 
 Here is how much of TeX's memory you used:
- 14755 strings out of 481239
- 237858 string characters out of 5920377
- 561641 words of memory out of 5000000
- 29318 multiletter control sequences out of 15000+600000
- 572908 words of font info for 287 fonts, out of 8000000 for 9000
+ 14781 strings out of 481239
+ 238198 string characters out of 5920377
+ 562641 words of memory out of 5000000
+ 29340 multiletter control sequences out of 15000+600000
+ 577127 words of font info for 292 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,11n,48p,998b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,11n,48p,1043b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
@@ -774,15 +766,16 @@ public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
-es/utmri8a.pfb>
-Output written on _main.pdf (6 pages, 766796 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on _main.pdf (6 pages, 774528 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
- 297 compressed objects within 3 object streams
- 80 named destinations out of 1000 (max. 500000)
- 31301 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 314 compressed objects within 4 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 32349 words of extra memory for PDF output out of 35830 (max. 10000000)
 

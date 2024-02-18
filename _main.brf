@@ -32,7 +32,7 @@
 \backcite {shin20193d}{{1}{2}{section*.2}}
 \backcite {wang2018pixel2mesh}{{1}{2}{section*.2}}
 \backcite {wu2018learning}{{1}{2}{section*.3}}
-\backcite {dahnert2021panoptic}{{2}{2}{section*.4}}
+\backcite {dahnert2021panoptic}{{1}{2}{section*.4}}
 \backcite {hou20193d}{{2}{2}{section*.4}}
 \backcite {hou2020revealnet}{{2}{2}{section*.4}}
 \backcite {dahnert2021panoptic}{{2}{2}{section*.4}}
@@ -53,13 +53,16 @@
 \backcite {fu20213e}{{2}{2}{section*.6}}
 \backcite {Denninger2023}{{2}{2}{section*.6}}
 \backcite {dahnert2021panoptic}{{2}{2}{section*.6}}
-\backcite {dahnert2021panoptic}{{2}{3}{section.3}}
-\backcite {cheng2023sdfusion}{{3}{3}{equation.3.5}}
-\backcite {devlin2018bert}{{3}{3}{equation.3.5}}
-\backcite {radford2021learning}{{3}{3}{equation.3.5}}
-\backcite {oord2017neural}{{3}{3}{equation.3.5}}
-\backcite {ronneberger2015u}{{3}{3}{equation.3.5}}
+\backcite {dahnert2021panoptic}{{2}{3.1}{subsection.3.1}}
+\backcite {he2016deep}{{2}{3.1}{subsection.3.1}}
+\backcite {he2017mask}{{2}{3.1}{subsection.3.1}}
+\backcite {cciccek20163d}{{2}{3.1}{subsection.3.1}}
+\backcite {cheng2023sdfusion}{{2}{3.2}{subsection.3.2}}
+\backcite {devlin2018bert}{{2}{3.2}{subsection.3.2}}
+\backcite {radford2021learning}{{2}{3.2}{subsection.3.2}}
+\backcite {oord2017neural}{{2}{3.2}{subsection.3.2}}
+\backcite {cciccek20163d}{{2}{3.2}{subsection.3.2}}
+\backcite {dahnert2021panoptic}{{3}{4}{section*.7}}
+\backcite {dahnert2021panoptic}{{3}{4}{section*.7}}
 \backcite {dahnert2021panoptic}{{3}{\caption@xref {??}{ on input line 19}}{table.caption.8}}
 \backcite {dahnert2021panoptic}{{3}{1}{figure.caption.9}}
-\backcite {dahnert2021panoptic}{{3}{4}{section*.7}}
-\backcite {dahnert2021panoptic}{{3}{4}{section*.7}}

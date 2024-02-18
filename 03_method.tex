@@ -1,6 +1,8 @@
 \section{Method}
 \label{sec:method}
 
+\subsection{Initial Panoptic Scene Reconstruction}
+
 We leverage Panoptic 3D \citep{dahnert2021panoptic} to predict the camera frustum geometry $\mathbf{X}_{P_{\text{geom}}}$ as well as associated 3D
 semantic and instance labels $\mathbf{X}_{P_{\text{sem}}}$, $\mathbf{X}_{P_{\text{instance}}}$  within the image. Said model yields both 2D and 3D representations of detected objects and
 does so by employing a ResNet-18 \citep{he2016deep} encoder for feature extraction from the input image. Subsequently,
@@ -26,10 +28,14 @@ where $\mathcal{L}_g^h, \mathcal{L}_s^h, \mathcal{L}_o^h$ represent the geometry
 At inference time, we use the 2D instance mask to extract RGB crops $\mathbf{I}_{\text{crop}}$ of the input image, and the 3D instance mask to extract the corresponding 3D geometry $\textbf{X}_{P_{\text{geom, crop}}}$.
 The extracted image, geometry and the semantic label are subsequently input into the object-level reconstruction model for shape reconstruction.
 
+\subsection{Object-Level Reconstruction}
+
 We use SDFusion \citep{cheng2023sdfusion} for object shape reconstruction, which expects a signed distance field as its primary input, and additionally leverages an RGB image and a textual representation as conditional inputs to guide the reconstruction process. To this end, SDFusion employs task-specific encoders (\citep{radford2021learning, devlin2018bert}) to get image and text embeddings, while simultaneously embedding the 3D shape into a latent space using a pre-trained vector quantized variational autoencoder (VQ-VAE) \citep{oord2017neural}. At training time, noise is introduced to the shape latent via forward diffusion, which is followed by a concatenation of the conditional embeddings. This serves as input to the 3D U-Net \citep{cciccek20163d} denoising network which reconstructs the latent code. Within the denoising U-Net, cross-attention is applied along the concatenated latent code to modulate the denoising process. Ultimately, the VQ-VAE decoder reconstructs the shape.
 
 At inference time, we use SDFusion to output a refined object geometry $\mathbf{X}_S$ for every object-level geometry extraction $\mathbf{X}_{P_{\text{geom, crop}}}$, leveraging the image crop $\mathbf{I}_{\text{crop}}$ and the corresponding semantic label $\mathbf{X}_{P_{\text{sem}}}$.
-However, the inference output of SDFusion is front-facing and might not align with the object's orientation in the original 3D scene. To adequately replace the original objects with the refined ones, we employ a custom registration algorithm to ensure proper alignment of the reconstructed objects within the scene. This process consists of 3 key steps:
+
+\subsection{Object-Level Shape Alignment}
+The inference output of SDFusion is front-facing and might not align with the object's orientation in the original 3D scene. Thus, to adequately replace the original objects with the refined ones, we employ a custom registration algorithm to ensure proper alignment of the reconstructed objects within the scene. This process consists of 3 key steps:
 \begin{enumerate}
     \item \textbf{Floor alignment:} To establish a common frame of reference and facilitate subsequent re-orientation, we align the reconstructed object with the floor plane of the 3D scene.
     
