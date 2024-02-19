@@ -26,42 +26,54 @@ Despite our efforts, limitations such as time constraints and the relatively sma
 
 \begin{figure}[t]
   \centering
-  \begin{subfigure}{0.45\linewidth}
+  \begin{subfigure}[b]{0.45\linewidth}
     \centering
     \includegraphics[width=\linewidth]{figs/depth_ours.png}
     \label{subfig:sub1}
+   \vspace*{-3mm} % Adjust vertical spacing between the caption and the images
+  \caption{Depth map (ours).}
   \end{subfigure}
-  \hspace{0.05\linewidth} % Adjust spacing between figures
-  \begin{subfigure}{0.45\linewidth}
+  \hfill
+  \begin{subfigure}[b]{0.45\linewidth}
     \centering
     \includegraphics[width=\linewidth]{figs/depth_pan.png}
     \label{subfig:sub2}
+   \vspace*{-3mm} % Adjust vertical spacing between the caption and the images
+  \caption{Depth map (\citep{dahnert2021panoptic}).}
   \end{subfigure}
-  \vspace*{-3mm} % Adjust vertical spacing between the caption and the images
-  \caption*{Depth Map}
 
-  \vspace{0.04\linewidth} % Adjust vertical spacing between rows of figures
+  \vspace{0.03\linewidth} % Adjust vertical spacing between rows of figures
 
-  \begin{subfigure}{0.45\linewidth}
+  \begin{subfigure}[b]{0.45\linewidth}
     \centering
     \includegraphics[width=\linewidth]{figs/depthply_ours.png}
     \label{subfig:sub3}
+   \vspace*{-3mm} % Adjust vertical spacing between the caption and the images
+   \caption{Geometry from depth (ours).}
   \end{subfigure}
-  \hspace{0.05\linewidth} % Adjust spacing between figures
-  \begin{subfigure}{0.45\linewidth}
+  \hfill
+  \begin{subfigure}[b]{0.45\linewidth}
     \centering
     \includegraphics[width=\linewidth]{figs/depthply_pan.png}
     \label{subfig:sub4}
-  \end{subfigure}
    \vspace*{-3mm} % Adjust vertical spacing between the caption and the images
-   \caption*{Geometry from Depth}
+   \caption{Geometry from depth (\citep{dahnert2021panoptic}).}
+  \end{subfigure}
 
-  \caption{2D panoptic results. Ours vs. \citet{dahnert2021panoptic}}
+  \caption{2D results from the Panoptic 3D model. Our re-training results (left) vs. results from \citet{dahnert2021panoptic} (right).}
   \label{fig:qual_panoptic}
 \end{figure}
 
 \paragraph{SDFusion Fine-tuning}
-In order to align the shape distribution SDFusion \citep{cheng2023sdfusion} may sample from with our use case, we finetune the model with furniture models from the 3D-Future dataset \citep{fu20213e}. TODO add visual results.
+In order to align SDFusion to the shape distribution of 3D-Front, we fine-tune the model on a subset of the 3D-Future dataset \citep{fu20213e}, which contains the objects used in the scenes of 3D-Front.
+We train the model for 12k steps using the original hyperparameters from \citet{cheng2023sdfusion} but with a batch size of 32 (see Figure \ref{fig:finetune}).
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{figs/sdfusion_finetune_loss_plot.png}
+  \caption{Loss curve of our SDFusion fine-tune (smoothed).}
+  \label{fig:finetune}
+\end{figure}
 
 \paragraph{Inference Pipeline}
 TODO add visual results
