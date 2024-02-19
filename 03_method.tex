@@ -37,10 +37,11 @@ At inference time, we use SDFusion to output a refined object geometry $\mathbf{
 \subsection{Object-Level Shape Alignment}
 The inference output of SDFusion is front-facing and might not align with the object's orientation in the original 3D scene. Thus, to adequately replace the original objects with the refined ones, we employ a custom registration algorithm to ensure proper alignment of the reconstructed objects within the scene. This process consists of 3 key steps:
 \begin{enumerate}
-    \item \textbf{Floor alignment:} To establish a common frame of reference and facilitate subsequent re-orientation, we align the reconstructed object with the floor plane of the 3D scene.
+    \item \textbf{Position alignment:} To establish a common frame of reference and facilitate subsequent re-orientation, we align the centroid of the refined object with the original object. 
     
-    \item \textbf{Rotational optimization:} Following floor alignment, the object is systematically rotated to 16 discrete, uniformly distributed positions around its y-axis, convering a diverse set of potential orientations.
+    \item \textbf{Rotation \& scale optimization:} Following position alignment, we want to find the correct orientation of our object. As we assume that the object is parallel to the floor and with the right side up, we only iterate through rotations around the y-axis. After each rotation step we scale our refined object in all three directions to fit the initial dimensions. We find the best rotation and scale by sampling points uniformly from both meshes and computing the chamfer distance.  
     
     % TODO (f.srambical): This is vague; what is the distance measure employed? Is it Chamfer distance? Between what? The original and the refined object?
-    \item \textbf{Selection based on similarity:} The final step involves selecting the orientation that minimizes the per-point difference between the reconstructed object (mesh) and the corresponding elements within the scene (point) utilizing trimesh. This metric serves as a quantitative measure of alignment accuracy.
+    \item \textbf{Floor alignment:} As most of the instances are standing on the floor, we align the floor distance of our refined object with the lowest vertex of the initial object. This is necessary as the centroids might not have the same object-relative height due to differing geometries. 
 \end{enumerate}
+Unlike a general approach like ICP, our customized approach leverages domain-specific knowledge about reconstructed indoor scenes in order to limit the degrees of freedom, like rotation in a single direction. This leads to a more robust approach, especially if the geometries are not identical.  
