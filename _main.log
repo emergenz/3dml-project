@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.12.31)  19 FEB 2024 16:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.12.31)  19 FEB 2024 16:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -620,39 +620,61 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 <figs/depth_ours.png, id=183, 115.632pt x 86.724pt>
 File: figs/depth_ours.png Graphic file (type png)
 <use figs/depth_ours.png>
-Package pdftex.def Info: figs/depth_ours.png  used on input line 31.
+Package pdftex.def Info: figs/depth_ours.png  used on input line 32.
 (pdftex.def)             Requested size: 106.71045pt x 80.03712pt.
 <figs/depth_pan.png, id=185, 115.632pt x 86.724pt>
 File: figs/depth_pan.png Graphic file (type png)
 <use figs/depth_pan.png>
-Package pdftex.def Info: figs/depth_pan.png  used on input line 37.
+Package pdftex.def Info: figs/depth_pan.png  used on input line 40.
 (pdftex.def)             Requested size: 106.71045pt x 80.03712pt.
-<figs/depthply_ours.png, id=186, 1014.79124pt x 615.80063pt>
+<figs/depthply_ours.png, id=188, 1014.79124pt x 615.80063pt>
 File: figs/depthply_ours.png Graphic file (type png)
 <use figs/depthply_ours.png>
-Package pdftex.def Info: figs/depthply_ours.png  used on input line 47.
+Package pdftex.def Info: figs/depthply_ours.png  used on input line 50.
 (pdftex.def)             Requested size: 106.71045pt x 64.75023pt.
-<figs/depthply_pan.png, id=187, 1014.79124pt x 615.80063pt>
+<figs/depthply_pan.png, id=189, 1014.79124pt x 615.80063pt>
 File: figs/depthply_pan.png Graphic file (type png)
 <use figs/depthply_pan.png>
-Package pdftex.def Info: figs/depthply_pan.png  used on input line 53.
+Package pdftex.def Info: figs/depthply_pan.png  used on input line 58.
 (pdftex.def)             Requested size: 106.71045pt x 64.75023pt.
-<images/image1.png, id=190, 1885.0425pt x 990.70125pt>
+<images/image1.png, id=194, 1885.0425pt x 990.70125pt>
 File: images/image1.png Graphic file (type png)
 <use images/image1.png>
-Package pdftex.def Info: images/image1.png  used on input line 67.
+Package pdftex.def Info: images/image1.png  used on input line 72.
 (pdftex.def)             Requested size: 310.13503pt x 162.99002pt.
-<images/image2.png, id=191, 977.6525pt x 990.70125pt>
+<images/image2.png, id=195, 977.6525pt x 990.70125pt>
 File: images/image2.png Graphic file (type png)
 <use images/image2.png>
-Package pdftex.def Info: images/image2.png  used on input line 72.
+Package pdftex.def Info: images/image2.png  used on input line 77.
 (pdftex.def)             Requested size: 159.33542pt x 161.46323pt.
-<images/image4.png, id=192, 1491.5725pt x 1076.02pt>
+ [3 <./figs/depth_ours.png> <./figs/depth_pan.png> <./figs/depthply_ours.png (PNG copy)> <./figs/depthply_pan.png (PNG copy)>]
+<figs/sdfusion_finetune_loss_plot.png, id=219, 722.7pt x 433.62pt>
+File: figs/sdfusion_finetune_loss_plot.png Graphic file (type png)
+<use figs/sdfusion_finetune_loss_plot.png>
+Package pdftex.def Info: figs/sdfusion_finetune_loss_plot.png  used on input line 99.
+(pdftex.def)             Requested size: 237.13594pt x 142.2812pt.
+<images/image4.png, id=220, 1491.5725pt x 1076.02pt>
 File: images/image4.png Graphic file (type png)
 <use images/image4.png>
-Package pdftex.def Info: images/image4.png  used on input line 81.
+Package pdftex.def Info: images/image4.png  used on input line 106.
 (pdftex.def)             Requested size: 1491.56886pt x 1076.0174pt.
- [3 <./figs/depth_ours.png> <./figs/depth_pan.png> <./figs/depthply_ours.png (PNG copy)> <./figs/depthply_pan.png (PNG copy)>]) (05_limitations.tex [4 <./images/image1.png> <./images/image2.png> <./images/image4.png>]) (_main.bbl (_main.brf)
+) (05_limitations.tex [4 <./images/image1.png> <./images/image2.png> <./figs/sdfusion_finetune_loss_plot.png> <./images/image4.png>]
+<figs/inputlim.png, id=233, 513.92pt x 383.4325pt>
+File: figs/inputlim.png Graphic file (type png)
+<use figs/inputlim.png>
+Package pdftex.def Info: figs/inputlim.png  used on input line 22.
+(pdftex.def)             Requested size: 71.1415pt x 53.07756pt.
+<figs/panolim.png, id=234, 513.92pt x 423.5825pt>
+File: figs/panolim.png Graphic file (type png)
+<use figs/panolim.png>
+Package pdftex.def Info: figs/panolim.png  used on input line 29.
+(pdftex.def)             Requested size: 71.1415pt x 58.63542pt.
+<figs/ourslim.png, id=235, 513.92pt x 418.56375pt>
+File: figs/ourslim.png Graphic file (type png)
+<use figs/ourslim.png>
+Package pdftex.def Info: figs/ourslim.png  used on input line 36.
+(pdftex.def)             Requested size: 71.1415pt x 57.94067pt.
+) (_main.bbl (_main.brf)
 \tf@brf=\write4
 \openout4 = `_main.brf'.
 
@@ -661,34 +683,28 @@ Overfull \hbox (0.6289pt too wide) in paragraph at lines 73--73
 \OT1/ptm/m/it/9 (-20) Advances in Neural Information Processing Systems\OT1/ptm/m/n/9 (-20) , 34:8282--
  []
 
-[5] [6]) [7
-
-] (_main.aux)
+[5 <./figs/inputlim.png> <./figs/panolim.png> <./figs/ourslim.png>] [6]) [7] (_main.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `_main.out' has not changed.
 (rerunfilecheck)             Checksum: 00D6CA12A91DC3B861600F4F6739985E;1356.
 Package rerunfilecheck Info: File `_main.brf' has not changed.
-(rerunfilecheck)             Checksum: 5726D44F12AA0F15A111AD4BE5003B55;3515.
+(rerunfilecheck)             Checksum: 4057F60CA419E8960EF0D85260E03FA2;3648.
  ) 
 Here is how much of TeX's memory you used:
- 19091 strings out of 474495
- 324649 string characters out of 5741079
- 1950457 words of memory out of 5000000
- 40552 multiletter control sequences out of 15000+600000
- 608491 words of font info for 364 fonts, out of 8000000 for 9000
+ 19143 strings out of 474495
+ 325808 string characters out of 5741079
+ 1951457 words of memory out of 5000000
+ 40596 multiletter control sequences out of 15000+600000
+ 608355 words of font info for 366 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,11n,99p,1140b,716s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,11n,99p,1140b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc}</Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on _main.pdf (7 pages, 71329142 bytes).
+Output written on _main.pdf (7 pages, 75612196 bytes).
 PDF statistics:
- 376 PDF objects out of 1000 (max. 8388607)
- 85 named destinations out of 1000 (max. 500000)
- 60516 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 396 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 60536 words of extra memory for PDF output out of 61914 (max. 10000000)
 

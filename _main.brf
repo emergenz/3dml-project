@@ -1,5 +1,3 @@
-\backcite {dahnert2021panoptic}{{1}{(document)}{Doc-Start}}
-\backcite {cheng2023sdfusion}{{1}{(document)}{Doc-Start}}
 \backcite {denninger20203d}{{1}{1}{section.1}}
 \backcite {shin20193d}{{1}{1}{section.1}}
 \backcite {gkioxari2019mesh}{{1}{1}{section.1}}
@@ -9,6 +7,7 @@
 \backcite {zhang2023uni}{{1}{1}{section.1}}
 \backcite {dahnert2021panoptic}{{1}{1}{section.1}}
 \backcite {cheng2023sdfusion}{{1}{1}{section.1}}
+\backcite {fu20213d}{{1}{1}{section.1}}
 \backcite {fu20213d}{{1}{1}{section.1}}
 \backcite {cheng2023sdfusion}{{1}{1}{section.1}}
 \backcite {fu20213e}{{1}{1}{section.1}}
@@ -66,5 +65,9 @@
 \backcite {cciccek20163d}{{2}{3.2}{subsection.3.2}}
 \backcite {dahnert2021panoptic}{{3}{4}{section*.7}}
 \backcite {dahnert2021panoptic}{{3}{4}{section*.7}}
-\backcite {dahnert2021panoptic}{{3}{\caption@xref {??}{ on input line 19}}{table.caption.8}}
+\backcite {dahnert2021panoptic}{{3}{\caption@xref {??}{ on input line 20}}{table.caption.8}}
+\backcite {dahnert2021panoptic}{{3}{1b}{figure.caption.9}}
+\backcite {dahnert2021panoptic}{{3}{1d}{figure.caption.9}}
 \backcite {dahnert2021panoptic}{{3}{1}{figure.caption.9}}
+\backcite {fu20213e}{{4}{4}{section*.12}}
+\backcite {cheng2023sdfusion}{{4}{4}{section*.12}}
