@@ -9,7 +9,7 @@ Initially, we pre-train the 2D encoder, depth estimation and 2D instance predict
 
 The evaluation results for our 2D model compared to the pre-trained model from \citet{dahnert2021panoptic} are presented in \cref{tab:2dresults}.
 As illustrated in \cref{fig:qual_panoptic}, our approach shows performance comparable to the pre-trained model. However, it encounters challenges in generating completely clear depth results, occasionally displaying some irregularities.
-Despite our efforts, limitations such as time constraints and the relatively small size of our dataset hindered our ability to train a 3D model that achieves performance on par with the pre-trained counterpart. We refer to the future work section in this regard.
+Hence, we use the pre-trained version of Panoptic 3D for our remaining inference experiments. We refer to \cref{sec:future} for avenues for future work.
 \begin{table}
   \centering
   \begin{tabular}{@{}lccc@{}}
