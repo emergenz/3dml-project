@@ -10,7 +10,7 @@ An additional advantage of utilizing a multi-modal diffusion model instead of di
 While our results show promise, it is important to acknowledge certain limitations of our method.
 Firstly, while Panoptic 3D does not need to detect an instance to reconstruct its approximate shape, SDFusion is only applied to detected objects.
 As a result, undetected objects may be entirely omitted from the refinement process.
-Noisy instance segmentations also pose a challenge, as our scale and position estimations are contingent upon the predicted instance labels.
+Noisy instance segmentations also pose a challenge, as our scale and position estimations are contingent upon the initial instance.
 Hence, instance segmentations that include parts of other instances or elements of the surrounding environment can lead to larger, misplaced refined instances.
 A concrete example of such case is presented in \cref{fig:comparison_bad}.
 
