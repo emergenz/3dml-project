@@ -2,7 +2,7 @@
 \label{sec:limitations}
 
 \paragraph{Conclusion}
-In summary, our method has demonstrated the effectiveness of combining reconstruction techniques with a object-level generation framework to significantly enhance the aesthetic quality of 3D instances within a reconstructed scene.
+In summary, our method demonstrates the effectiveness of combining reconstruction techniques with an object-level generation framework to significantly enhance the aesthetic quality of 3D instances within a reconstructed scene.
 Moreover, our approach facilitates a straightforward process for generating virtual environments from single images, with potential applications in gaming, virtual reality, and augmented reality settings.
 An additional advantage of utilizing a multi-modal diffusion model instead of directly leveraging high-quality 3D objects, such as CAD models, is the ability to customize inputs, enabling fine-grained control over the reconstructed scene.
 
@@ -44,10 +44,11 @@ A concrete example of this phenomenon is presented in \cref{fig:lim}.
 \vspace*{-5mm}
 
 \paragraph{Future Work}
+\label{sec:future}
 To overcome these limitations, we suggest two avenues for future research.
 The first direction involves implementing end-to-end training with adapted loss functions, aimed at penalizing misidentified instances more effectively.
 This approach could enhance the accuracy of instance segmentation and reduce the incidence of missing or misattributed objects in the reconstructed scene.
 Secondly, refining the merging process by integrating a pose estimation network can be utilized to enhance object alignment and scaling.
 Another promising avenue for exploration involves guiding object-level reconstruction with more detailed descriptive inputs.
-By incorporating these object descriptions during inference, inspired by the findings in the SDFusion paper, we can potentially generate more tailored and contextually relevant reconstructions.
+By incorporating these object descriptions during inference -- inspired by the findings of the SDFusion paper -- we can potentially generate more tailored and contextually relevant reconstructions.
 % We conducted separate training for both the Panoptic model and the SDFusion model. To increase the performance we advocate for an end-to-end training approach. Given that the Panoptic model outputs occupancies and a distance field in terms of geometry, a differentiable transformation to a signed distance field is necessary to allow end-to-end training. This integration would enable SDFusion to effectively backpropagate gradients and directly learn from SDFusion's noisy inputs. Another constraint lies in our registration algorithm, which selects one out of 16 predefined positions, which can pose a challenge in achieving perfect alignment relying on the initial orientation of the reconstructed objects. A more robust alignment strategy can enhance the overall quality of the final scene.
