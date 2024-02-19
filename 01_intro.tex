@@ -10,7 +10,7 @@ from generating geometrically coherent structures \citep{denninger20203d, shin20
 nie2020total3dunderstanding}. More recent approaches directly learn the 3D panoptic semantics as a whole \citep{dahnert2021panoptic, zhang2023uni}, yet they fall short in capturing the intricate details and nuances at the object level.
 This paper introduces a novel approach to bridge this gap by integrating a specialized object-level model into the reconstruction process, thereby leveraging the specialized model's object-priors.
 
-Our approach models panoptic 3D reconstruction as a two-stage problem. We first use the model of \citet{dahnert2021panoptic} to create an initial reconstruction. Then, we leverage the instance masks to extract the object geometries out of the reconstructed scene. We input each of the extracted objects along with cropped images from the scene and text labels into a diffusion model \citep{cheng2023sdfusion} to refine the rough object-level geometries.
+Our approach\footnote{Our code can be found at \url{https://github.com/Anna-Ribic/panoptic-reconstruction-ml3d}.} models panoptic 3D reconstruction as a two-stage problem. We first use the model of \citet{dahnert2021panoptic} to create an initial reconstruction. Then, we leverage the instance masks to extract the object geometries out of the reconstructed scene. We input each of the extracted objects along with cropped images from the scene and text labels into a diffusion model \citep{cheng2023sdfusion} to refine the rough object-level geometries.
 Finally, we integrate the refined object geometries back into the initial scene reconstruction to obtain a complete and refined panoptic 3D scene reconstruction.
 
 In summary, our main contributions are as follows:
