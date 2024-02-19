@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.31)  19 FEB 2024 19:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.31)  19 FEB 2024 19:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -709,12 +709,12 @@ File: figs/pipeline.png Graphic file (type png)
 Package pdftex.def Info: figs/pipeline.png  used on input line 6.
 (pdftex.def)             Requested size: 496.85625pt x 127.3795pt.
  [2]) (./04_results.tex
-<images/image1.png, id=205, 1885.0425pt x 990.70125pt>
+<images/image1.png, id=209, 1885.0425pt x 990.70125pt>
 File: images/image1.png Graphic file (type png)
 <use images/image1.png>
 Package pdftex.def Info: images/image1.png  used on input line 71.
 (pdftex.def)             Requested size: 310.13503pt x 162.99002pt.
-<images/image2.png, id=206, 977.6525pt x 990.70125pt>
+<images/image2.png, id=210, 977.6525pt x 990.70125pt>
 File: images/image2.png Graphic file (type png)
 <use images/image2.png>
 Package pdftex.def Info: images/image2.png  used on input line 76.
@@ -734,46 +734,45 @@ Overfull \hbox (0.6289pt too wide) in paragraph at lines 73--73
 [5] [6]) [7
 
 ] (./12_appendix.tex
-<figs/sdfusion_finetune_loss_plot.png, id=322, 722.7pt x 433.62pt>
+<figs/sdfusion_finetune_loss_plot.png, id=328, 722.7pt x 433.62pt>
 File: figs/sdfusion_finetune_loss_plot.png Graphic file (type png)
 <use figs/sdfusion_finetune_loss_plot.png>
 Package pdftex.def Info: figs/sdfusion_finetune_loss_plot.png  used on input li
-ne 26.
-(pdftex.def)             Requested size: 243.46228pt x 146.07909pt.
-<images/image4.png, id=323, 1491.5725pt x 1076.02pt>
+ne 25.
+(pdftex.def)             Requested size: 237.13594pt x 142.2812pt.
+<images/image4.png, id=329, 1491.5725pt x 1076.02pt>
 File: images/image4.png Graphic file (type png)
 <use images/image4.png>
-Package pdftex.def Info: images/image4.png  used on input line 33.
-(pdftex.def)             Requested size: 243.46228pt x 175.63107pt.
-<figs/depth_ours.png, id=324, 115.632pt x 86.724pt>
+Package pdftex.def Info: images/image4.png  used on input line 32.
+(pdftex.def)             Requested size: 237.13594pt x 171.06667pt.
+<figs/depth_ours.png, id=330, 115.632pt x 86.724pt>
 File: figs/depth_ours.png Graphic file (type png)
 <use figs/depth_ours.png>
-Package pdftex.def Info: figs/depth_ours.png  used on input line 47.
-(pdftex.def)             Requested size: 109.55728pt x 82.17162pt.
-<figs/depth_pan.png, id=325, 115.632pt x 86.724pt>
+Package pdftex.def Info: figs/depth_ours.png  used on input line 97.
+(pdftex.def)             Requested size: 106.71045pt x 80.03712pt.
+<figs/depth_pan.png, id=331, 115.632pt x 86.724pt>
 File: figs/depth_pan.png Graphic file (type png)
 <use figs/depth_pan.png>
-Package pdftex.def Info: figs/depth_pan.png  used on input line 55.
-(pdftex.def)             Requested size: 109.55728pt x 82.17162pt.
-<figs/depthply_ours.png, id=328, 1014.79124pt x 615.80063pt>
+Package pdftex.def Info: figs/depth_pan.png  used on input line 105.
+(pdftex.def)             Requested size: 106.71045pt x 80.03712pt.
+<figs/depthply_ours.png, id=334, 1014.79124pt x 615.80063pt>
 File: figs/depthply_ours.png Graphic file (type png)
 <use figs/depthply_ours.png>
-Package pdftex.def Info: figs/depthply_ours.png  used on input line 65.
-(pdftex.def)             Requested size: 109.55728pt x 66.47916pt.
-<figs/depthply_pan.png, id=329, 1014.79124pt x 615.80063pt>
+Package pdftex.def Info: figs/depthply_ours.png  used on input line 115.
+(pdftex.def)             Requested size: 106.71045pt x 64.75023pt.
+<figs/depthply_pan.png, id=335, 1014.79124pt x 615.80063pt>
 File: figs/depthply_pan.png Graphic file (type png)
 <use figs/depthply_pan.png>
-Package pdftex.def Info: figs/depthply_pan.png  used on input line 73.
-(pdftex.def)             Requested size: 109.55728pt x 66.47916pt.
-<figs/depthloss.png, id=334, 1471.4975pt x 757.83125pt>
+Package pdftex.def Info: figs/depthply_pan.png  used on input line 123.
+(pdftex.def)             Requested size: 106.71045pt x 64.75023pt.
+<figs/depthloss.png, id=340, 1458.44875pt x 757.83125pt>
 File: figs/depthloss.png Graphic file (type png)
 <use figs/depthloss.png>
-Package pdftex.def Info: figs/depthloss.png  used on input line 85.
-(pdftex.def)             Requested size: 243.46228pt x 125.38367pt.
+Package pdftex.def Info: figs/depthloss.png  used on input line 135.
+(pdftex.def)             Requested size: 237.13594pt x 123.20972pt.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
  [8
-
 
  <./figs/sdfusion_finetune_loss_plot.png> <./images/image4.png> <./figs/depth_o
 urs.png> <./figs/depth_pan.png> <./figs/depthply_ours.png (PNG copy)> <./figs/d
@@ -785,16 +784,16 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `_main.out' has not changed.
 (rerunfilecheck)             Checksum: DAAFADAD01514F179A4E678314154FC2;748.
 Package rerunfilecheck Info: File `_main.brf' has not changed.
-(rerunfilecheck)             Checksum: D0890531EEFA30FDF7DA267F73E37E50;3918.
+(rerunfilecheck)             Checksum: 683F31D56C8A89E63EEECABE8E599D26;3918.
  ) 
 Here is how much of TeX's memory you used:
- 14884 strings out of 481239
- 240044 string characters out of 5920377
+ 14899 strings out of 481239
+ 240222 string characters out of 5920377
  562641 words of memory out of 5000000
- 29403 multiletter control sequences out of 15000+600000
- 578861 words of font info for 306 fonts, out of 8000000 for 9000
+ 29407 multiletter control sequences out of 15000+600000
+ 582237 words of font info for 314 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,11n,49p,1043b,637s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,11n,49p,1043b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
@@ -810,10 +809,10 @@ xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on _main.pdf (8 pages, 79828974 bytes).
+Output written on _main.pdf (8 pages, 79804157 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
- 363 compressed objects within 4 object streams
- 94 named destinations out of 1000 (max. 500000)
- 34443 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 439 PDF objects out of 1000 (max. 8388607)
+ 372 compressed objects within 4 object streams
+ 97 named destinations out of 1000 (max. 500000)
+ 37515 words of extra memory for PDF output out of 42996 (max. 10000000)
 
