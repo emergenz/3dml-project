@@ -1,5 +1,8 @@
 \section{Results}
 \label{sec:results}
+
+We exclusively present qualitative results, as our focus lies on improving the visual clarity of generated geometry, rather than achieving precise alignment with the ground truth.
+\vspace*{-4mm}
 \paragraph{Panoptic Reconstruction Training}
 
 We leverage our synthesized dataset to refine the training of the panoptic reconstruction model proposed by \citet{dahnert2021panoptic}.
@@ -64,6 +67,7 @@ Hence, we use the pre-trained version of Panoptic 3D for our remaining inference
 \end{figure}
 \fi
 
+\vspace*{-3mm}
 \paragraph{Refined Reconstruction}
 
 \begin{figure*}%
@@ -90,27 +94,7 @@ Moreover, our approach treats each object separately in SDFusion, resulting in d
 
 Conversely, in cases where instance mask predictions are noisy, or instances are missing completely, our method struggles to create good scene reconstructions, as displayed on the right of figure \ref{fig:comparison_bad}. In this setting, panoptic reconstruction generates the table but is not able to identify it. Due to the absence of the table instance, our approach is unable to reconstruct it, given that SDFusion is applied on the object level. For the other instances, our method can maintain smoothness even with the bad-quality mask predictions, but our alignment algorithm occasionally fails, resulting in object intersections, disproportionate scales and incorrect orientations. Lastly, our method also struggles if wrong labels are provided for an instance, as seen in the example on the left.
 
-
-
 \paragraph{SDFusion Fine-tuning}
+
 In order to align SDFusion to the shape distribution of 3D-Front, we fine-tune the model on a subset of the 3D-Future dataset \citep{fu20213e}, which contains the objects used in the scenes of 3D-Front.
 We train the model for 12k steps using the original hyperparameters from \citet{cheng2023sdfusion} but with a batch size of 32. We examine the effects of fine-tuning SDFusion in \ref{sec:appendic_fine_tuning}.
-
-
-\iffalse
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{figs/sdfusion_finetune_loss_plot.png}
-  \caption{Loss curve of our SDFusion fine-tune (smoothed).}
-  \label{fig:finetune}
-\end{figure}
-\fi
-
-\iffalse
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=80mm, scale=1]{images/image4.png}
-  \caption{Fine-tuning results for SDFusion}
-  \label{fig:finetune_geometries}
-\end{figure}
-\fi
