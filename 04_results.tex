@@ -94,7 +94,9 @@ Conversely, in cases where instance mask predictions are noisy, or instances are
 
 \paragraph{SDFusion Fine-tuning}
 In order to align SDFusion to the shape distribution of 3D-Front, we fine-tune the model on a subset of the 3D-Future dataset \citep{fu20213e}, which contains the objects used in the scenes of 3D-Front.
-We train the model for 12k steps using the original hyperparameters from \citet{cheng2023sdfusion} but with a batch size of 32 (see Figure \ref{fig:finetune}).
+We train the model for 12k steps using the original hyperparameters from \citet{cheng2023sdfusion} but with a batch size of 32 (see Figure \ref{fig:finetune}). 
+
+The process of fine-tuning significantly enhances our capacity to generate objects that more accurately align with those presented in Front3D. This is demonstrated in figure \ref{fig:finetune_geometries}, where a notable improvement is observed in the refined geometries of beds. Prior to fine-tuning, the standard SDFusion model produced representations resembling armchairs; however, post-fine-tuning, the model successfully generates geometries that appropriately resemble beds.
 
 \iffalse
 \begin{figure}
@@ -109,4 +111,5 @@ We train the model for 12k steps using the original hyperparameters from \citet{
   \centering
   \includegraphics[width=80mm, scale=1]{images/image4.png}
   \caption{Fine-tuning results for SDFusion}
+  \label{fig:finetune_geometries}
 \end{figure}
