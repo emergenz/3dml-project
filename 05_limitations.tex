@@ -13,7 +13,7 @@ While the panoptic reconstruction model doesn't necessarily need to detect an in
 As a result, undetected objects and instances erroneously identified as part of another object may be entirely omitted from the refinement process.
 Moreover, noisy instance segmentations pose another challenge, as our scale and position estimations are contingent upon the predicted instance labels.
 Hence, instance segmentations that include parts of other instances or elements of the surrounding environment can lead to the creation of larger, misplaced refined instances.
-A concrete example of this phenomenon is presented in \cref{fig:lim}.
+A concrete example of this phenomenon is presented in \cref{fig:comparison_bad}.
 
 \iffalse
 \begin{figure}[t]
@@ -44,6 +44,7 @@ A concrete example of this phenomenon is presented in \cref{fig:lim}.
 \end{figure}
 \vspace*{-5mm}
 \fi
+
 
 \paragraph{Future Work}
 \label{sec:future}
