@@ -33,6 +33,7 @@
 \backcite {shin20193d}{{1}{2}{section*.2}}
 \backcite {wang2018pixel2mesh}{{1}{2}{section*.2}}
 \backcite {wu2018learning}{{2}{2}{section*.3}}
+\backcite {wu2018learning}{{2}{2}{section*.3}}
 \backcite {dahnert2021panoptic}{{2}{2}{section*.4}}
 \backcite {hou20193d}{{2}{2}{section*.4}}
 \backcite {hou2020revealnet}{{2}{2}{section*.4}}
@@ -67,9 +68,10 @@
 \backcite {cheng2023sdfusion}{{3}{1}{figure.caption.7}}
 \backcite {dahnert2021panoptic}{{3}{\caption@xref {??}{ on input line 19}}{table.caption.9}}
 \backcite {dahnert2021panoptic}{{3}{4}{section*.8}}
+\backcite {kingma2014adam}{{3}{4}{section*.8}}
 \backcite {dahnert2021panoptic}{{3}{4}{section*.8}}
-\backcite {fu20213e}{{3}{4}{section*.11}}
 \backcite {dahnert2021panoptic}{{4}{2b}{figure.caption.10}}
 \backcite {dahnert2021panoptic}{{4}{2d}{figure.caption.10}}
 \backcite {dahnert2021panoptic}{{4}{2}{figure.caption.10}}
-\backcite {cheng2023sdfusion}{{4}{4}{section*.11}}
+\backcite {fu20213e}{{4}{4}{section*.13}}
+\backcite {cheng2023sdfusion}{{4}{4}{section*.13}}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{52}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -173,6 +173,11 @@ Jitesh Jain, Jiachen Li, Mang~Tik Chiu, Ali Hassani, Nikita Orlov, and Humphrey
 \newblock Oneformer: One transformer to rule universal image segmentation.
 \newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
   and Pattern Recognition (CVPR)}, pages 2989--2998, 2023.
+
+\bibitem[Kingma and Ba(2014)]{kingma2014adam}
+Diederik~P Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock \emph{arXiv preprint arXiv:1412.6980}, 2014.
 
 \bibitem[Kirillov et~al.(2019)Kirillov, He, Girshick, Rother, and
   Doll{\'a}r]{kirillov2019panoptic}
