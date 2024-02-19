@@ -16,13 +16,12 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\citation{dahnert2021panoptic}
-\citation{cheng2023sdfusion}
 \citation{denninger20203d,shin20193d}
 \citation{gkioxari2019mesh,kuo2020mask2cad,nie2020total3dunderstanding}
 \citation{dahnert2021panoptic,zhang2023uni}
 \citation{dahnert2021panoptic}
 \citation{cheng2023sdfusion}
+\citation{fu20213d}
 \citation{fu20213d}
 \citation{cheng2023sdfusion}
 \citation{fu20213e}
@@ -32,9 +31,8 @@
 \citation{Jain_2023_CVPR}
 \citation{snavely2006photo}
 \citation{choy20163d,wang2018pixel2mesh,mescheder2019occupancy,huang2019perspectivenet,shin20193d,denninger20203d,nie2020total3dunderstanding}
+\citation{wu2018learning}
 \@LN@col{1}
-\@writefile{brf}{\backcite{dahnert2021panoptic}{{1}{(document)}{Doc-Start}}}
-\@writefile{brf}{\backcite{cheng2023sdfusion}{{1}{(document)}{Doc-Start}}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}\hskip -1em.\nobreakspace  {}Introduction}{1}{section.1}\protected@file@percent }
 \newlabel{sec:intro}{{1}{1}{\hskip -1em.~Introduction}{section.1}{}}
 \newlabel{sec:intro@cref}{{[section][1][]1}{[1][1][]1}}
@@ -46,8 +44,9 @@
 \@writefile{brf}{\backcite{dahnert2021panoptic}{{1}{1}{section.1}}}
 \@writefile{brf}{\backcite{zhang2023uni}{{1}{1}{section.1}}}
 \@writefile{brf}{\backcite{dahnert2021panoptic}{{1}{1}{section.1}}}
-\@LN@col{2}
 \@writefile{brf}{\backcite{cheng2023sdfusion}{{1}{1}{section.1}}}
+\@LN@col{2}
+\@writefile{brf}{\backcite{fu20213d}{{1}{1}{section.1}}}
 \@writefile{brf}{\backcite{fu20213d}{{1}{1}{section.1}}}
 \@writefile{brf}{\backcite{cheng2023sdfusion}{{1}{1}{section.1}}}
 \@writefile{brf}{\backcite{fu20213e}{{1}{1}{section.1}}}
@@ -70,7 +69,13 @@
 \@writefile{brf}{\backcite{Jain_2023_CVPR}{{1}{2}{section*.1}}}
 \@writefile{toc}{\contentsline {paragraph}{Single-view 3D reconstruction}{1}{section*.2}\protected@file@percent }
 \@writefile{brf}{\backcite{snavely2006photo}{{1}{2}{section*.2}}}
-\citation{wu2018learning}
+\@writefile{brf}{\backcite{choy20163d}{{1}{2}{section*.2}}}
+\@writefile{brf}{\backcite{denninger20203d}{{1}{2}{section*.2}}}
+\@writefile{brf}{\backcite{huang2019perspectivenet}{{1}{2}{section*.2}}}
+\@writefile{brf}{\backcite{mescheder2019occupancy}{{1}{2}{section*.2}}}
+\@writefile{brf}{\backcite{nie2020total3dunderstanding}{{1}{2}{section*.2}}}
+\@writefile{brf}{\backcite{shin20193d}{{1}{2}{section*.2}}}
+\@writefile{brf}{\backcite{wang2018pixel2mesh}{{1}{2}{section*.2}}}
 \citation{dahnert2021panoptic}
 \citation{hou20193d,hou2020revealnet}
 \citation{dahnert2021panoptic}
@@ -90,6 +95,10 @@
 \citation{Denninger2023}
 \citation{dahnert2021panoptic}
 \citation{dahnert2021panoptic}
+\citation{cheng2023sdfusion}
+\citation{dahnert2021panoptic}
+\citation{cheng2023sdfusion}
+\citation{dahnert2021panoptic}
 \citation{he2016deep}
 \citation{he2017mask}
 \citation{cciccek20163d}
@@ -98,13 +107,6 @@
 \citation{oord2017neural}
 \citation{cciccek20163d}
 \@LN@col{1}
-\@writefile{brf}{\backcite{choy20163d}{{2}{2}{section*.2}}}
-\@writefile{brf}{\backcite{denninger20203d}{{2}{2}{section*.2}}}
-\@writefile{brf}{\backcite{huang2019perspectivenet}{{2}{2}{section*.2}}}
-\@writefile{brf}{\backcite{mescheder2019occupancy}{{2}{2}{section*.2}}}
-\@writefile{brf}{\backcite{nie2020total3dunderstanding}{{2}{2}{section*.2}}}
-\@writefile{brf}{\backcite{shin20193d}{{2}{2}{section*.2}}}
-\@writefile{brf}{\backcite{wang2018pixel2mesh}{{2}{2}{section*.2}}}
 \@writefile{toc}{\contentsline {paragraph}{Shape priors}{2}{section*.3}\protected@file@percent }
 \@writefile{brf}{\backcite{wu2018learning}{{2}{2}{section*.3}}}
 \@writefile{toc}{\contentsline {paragraph}{3D scene understanding}{2}{section*.4}\protected@file@percent }
@@ -151,54 +153,87 @@
 \citation{dahnert2021panoptic}
 \citation{dahnert2021panoptic}
 \citation{dahnert2021panoptic}
-\citation{cheng2023sdfusion}
+\citation{dahnert2021panoptic}
+\citation{dahnert2021panoptic}
+\citation{dahnert2021panoptic}
+\citation{dahnert2021panoptic}
 \citation{fu20213e}
+\citation{cheng2023sdfusion}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The diagram illustrates the multi-step process of panoptic scene reconstruction, object-level reconstruction, and object-level shape alignment. This includes leveraging Panoptic 3D \citep  {dahnert2021panoptic} for initial scene reconstruction, SDFusion \citep  {cheng2023sdfusion} for object shape reconstruction, and a custom registration algorithm for precise alignment of reconstructed objects within the scene.\relax }}{3}{figure.caption.7}\protected@file@percent }
+\@writefile{brf}{\backcite{dahnert2021panoptic}{{3}{1}{figure.caption.7}}}
+\@writefile{brf}{\backcite{cheng2023sdfusion}{{3}{1}{figure.caption.7}}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:pipeline}{{1}{3}{The diagram illustrates the multi-step process of panoptic scene reconstruction, object-level reconstruction, and object-level shape alignment. This includes leveraging Panoptic 3D \citep {dahnert2021panoptic} for initial scene reconstruction, SDFusion \citep {cheng2023sdfusion} for object shape reconstruction, and a custom registration algorithm for precise alignment of reconstructed objects within the scene.\relax }{figure.caption.7}{}}
+\newlabel{fig:pipeline@cref}{{[figure][1][]1}{[1][2][]3}}
 \@LN@col{1}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}\hskip -1em.\nobreakspace  {}Object-Level Shape Alignment}{3}{subsection.3.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4}\hskip -1em.\nobreakspace  {}Results}{3}{section.4}\protected@file@percent }
 \newlabel{sec:results}{{4}{3}{\hskip -1em.~Results}{section.4}{}}
 \newlabel{sec:results@cref}{{[section][4][]4}{[1][3][]3}}
-\@writefile{toc}{\contentsline {paragraph}{Panoptic Reconstruction Training}{3}{section*.7}\protected@file@percent }
-\@writefile{brf}{\backcite{dahnert2021panoptic}{{3}{4}{section*.7}}}
-\@writefile{brf}{\backcite{dahnert2021panoptic}{{3}{4}{section*.7}}}
 \@LN@col{2}
-\@writefile{brf}{\backcite{dahnert2021panoptic}{{3}{\caption@xref {??}{ on input line 19}}{table.caption.8}}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Results for joint training of the 2D encoder, depth estimation and 2D instance prediction. For depth we report the $\ell _1$ distance between the predicted and ground-truth depth maps. Additionally we report the $\ell _1$ distance for the regressed 2D boxes and a CE-loss on the box classification. \relax }}{3}{table.caption.8}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{tab:2dresults}{{1}{3}{Results for joint training of the 2D encoder, depth estimation and 2D instance prediction. For depth we report the $\ell _1$ distance between the predicted and ground-truth depth maps. Additionally we report the $\ell _1$ distance for the regressed 2D boxes and a CE-loss on the box classification. \relax }{table.caption.8}{}}
+\@writefile{brf}{\backcite{dahnert2021panoptic}{{3}{\caption@xref {??}{ on input line 19}}{table.caption.9}}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Results for joint training of the 2D encoder, depth estimation and 2D instance prediction. For depth we report the $\ell _1$ distance between the predicted and ground-truth depth maps. Additionally we report the $\ell _1$ distance for the regressed 2D boxes and a CE-loss on the box classification. \relax }}{3}{table.caption.9}\protected@file@percent }
+\newlabel{tab:2dresults}{{1}{3}{Results for joint training of the 2D encoder, depth estimation and 2D instance prediction. For depth we report the $\ell _1$ distance between the predicted and ground-truth depth maps. Additionally we report the $\ell _1$ distance for the regressed 2D boxes and a CE-loss on the box classification. \relax }{table.caption.9}{}}
 \newlabel{tab:2dresults@cref}{{[table][1][]1}{[1][3][]3}}
-\newlabel{subfig:sub1}{{\caption@xref {subfig:sub1}{ on input line 32}}{3}{Panoptic Reconstruction Training}{figure.caption.9}{}}
-\newlabel{subfig:sub1@cref}{{[section][4][]4}{[1][3][]3}}
-\newlabel{sub@subfig:sub1}{{}{3}{Panoptic Reconstruction Training}{figure.caption.9}{}}
-\newlabel{sub@subfig:sub1@cref}{{[section][4][]4}{[1][3][]3}}
-\newlabel{subfig:sub2}{{\caption@xref {subfig:sub2}{ on input line 38}}{3}{Panoptic Reconstruction Training}{figure.caption.9}{}}
-\newlabel{subfig:sub2@cref}{{[section][4][]4}{[1][3][]3}}
-\newlabel{sub@subfig:sub2}{{}{3}{Panoptic Reconstruction Training}{figure.caption.9}{}}
-\newlabel{sub@subfig:sub2@cref}{{[section][4][]4}{[1][3][]3}}
-\newlabel{subfig:sub3}{{\caption@xref {subfig:sub3}{ on input line 48}}{3}{Panoptic Reconstruction Training}{figure.caption.9}{}}
-\newlabel{subfig:sub3@cref}{{[section][4][]4}{[1][3][]3}}
-\newlabel{sub@subfig:sub3}{{}{3}{Panoptic Reconstruction Training}{figure.caption.9}{}}
-\newlabel{sub@subfig:sub3@cref}{{[section][4][]4}{[1][3][]3}}
-\newlabel{subfig:sub4}{{\caption@xref {subfig:sub4}{ on input line 54}}{3}{Panoptic Reconstruction Training}{figure.caption.9}{}}
-\newlabel{subfig:sub4@cref}{{[section][4][]4}{[1][3][]3}}
-\newlabel{sub@subfig:sub4}{{}{3}{Panoptic Reconstruction Training}{figure.caption.9}{}}
-\newlabel{sub@subfig:sub4@cref}{{[section][4][]4}{[1][3][]3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces 2D panoptic results. Ours vs. \citet  {dahnert2021panoptic}\relax }}{3}{figure.caption.9}\protected@file@percent }
-\@writefile{brf}{\backcite{dahnert2021panoptic}{{3}{1}{figure.caption.9}}}
-\newlabel{fig:qual_panoptic}{{1}{3}{2D panoptic results. Ours vs. \citet {dahnert2021panoptic}\relax }{figure.caption.9}{}}
-\newlabel{fig:qual_panoptic@cref}{{[figure][1][]1}{[1][3][]3}}
-\@writefile{toc}{\contentsline {paragraph}{SDFusion Fine-tuning}{3}{section*.10}\protected@file@percent }
-\@writefile{brf}{\backcite{cheng2023sdfusion}{{3}{4}{section*.10}}}
-\@writefile{brf}{\backcite{fu20213e}{{3}{4}{section*.10}}}
-\@writefile{toc}{\contentsline {paragraph}{Inference Pipeline}{3}{section*.11}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Conclusion, Limitations \& Future Work}{3}{section.5}\protected@file@percent }
-\newlabel{sec:limitations}{{5}{3}{\hskip -1em.~Conclusion, Limitations \& Future Work}{section.5}{}}
-\newlabel{sec:limitations@cref}{{[section][5][]5}{[1][3][]3}}
-\@writefile{toc}{\contentsline {paragraph}{Conclusion}{3}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Panoptic Reconstruction Training}{3}{section*.8}\protected@file@percent }
+\@writefile{brf}{\backcite{dahnert2021panoptic}{{3}{4}{section*.8}}}
+\@writefile{brf}{\backcite{dahnert2021panoptic}{{3}{4}{section*.8}}}
+\@writefile{toc}{\contentsline {paragraph}{SDFusion Fine-tuning}{3}{section*.11}\protected@file@percent }
+\@writefile{brf}{\backcite{fu20213e}{{3}{4}{section*.11}}}
 \bibstyle{ieeenat_fullname}
 \bibdata{11_references}
 \bibcite{achlioptas2018learning}{{1}{2018}{{Achlioptas et~al.}}{{Achlioptas, Diamanti, Mitliagkas, and Guibas}}}
 \bibcite{Chen_2023_ICCV}{{2}{2023}{{Chen et~al.}}{{Chen, Li, Saxena, Hinton, and Fleet}}}
+\@LN@col{1}
+\newlabel{subfig:sub1}{{\caption@xref {subfig:sub1}{ on input line 32}}{4}{Panoptic Reconstruction Training}{figure.caption.10}{}}
+\newlabel{subfig:sub1@cref}{{[section][4][]4}{[1][3][]4}}
+\newlabel{sub@subfig:sub1}{{}{4}{Panoptic Reconstruction Training}{figure.caption.10}{}}
+\newlabel{sub@subfig:sub1@cref}{{[section][4][]4}{[1][3][]4}}
+\newlabel{subfig:sub2}{{\caption@xref {subfig:sub2}{ on input line 40}}{4}{Panoptic Reconstruction Training}{figure.caption.10}{}}
+\newlabel{subfig:sub2@cref}{{[section][4][]4}{[1][3][]4}}
+\newlabel{sub@subfig:sub2}{{a}{4}{Panoptic Reconstruction Training}{figure.caption.10}{}}
+\newlabel{sub@subfig:sub2@cref}{{[section][4][]4}{[1][3][]4}}
+\@writefile{brf}{\backcite{dahnert2021panoptic}{{4}{2b}{figure.caption.10}}}
+\newlabel{subfig:sub3}{{\caption@xref {subfig:sub3}{ on input line 50}}{4}{Panoptic Reconstruction Training}{figure.caption.10}{}}
+\newlabel{subfig:sub3@cref}{{[section][4][]4}{[1][3][]4}}
+\newlabel{sub@subfig:sub3}{{b}{4}{Panoptic Reconstruction Training}{figure.caption.10}{}}
+\newlabel{sub@subfig:sub3@cref}{{[section][4][]4}{[1][3][]4}}
+\newlabel{subfig:sub4}{{\caption@xref {subfig:sub4}{ on input line 58}}{4}{Panoptic Reconstruction Training}{figure.caption.10}{}}
+\newlabel{subfig:sub4@cref}{{[section][4][]4}{[1][3][]4}}
+\newlabel{sub@subfig:sub4}{{c}{4}{Panoptic Reconstruction Training}{figure.caption.10}{}}
+\newlabel{sub@subfig:sub4@cref}{{[section][4][]4}{[1][3][]4}}
+\@writefile{brf}{\backcite{dahnert2021panoptic}{{4}{2d}{figure.caption.10}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces 2D results from the Panoptic 3D model. Our re-training results (left) vs. results from \citet  {dahnert2021panoptic} (right).\relax }}{4}{figure.caption.10}\protected@file@percent }
+\@writefile{brf}{\backcite{dahnert2021panoptic}{{4}{2}{figure.caption.10}}}
+\newlabel{fig:qual_panoptic}{{2}{4}{2D results from the Panoptic 3D model. Our re-training results (left) vs. results from \citet {dahnert2021panoptic} (right).\relax }{figure.caption.10}{}}
+\newlabel{fig:qual_panoptic@cref}{{[figure][2][]2}{[1][3][]4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Loss curve of our SDFusion fine-tune (smoothed).\relax }}{4}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:finetune}{{3}{4}{Loss curve of our SDFusion fine-tune (smoothed).\relax }{figure.caption.12}{}}
+\newlabel{fig:finetune@cref}{{[figure][3][]3}{[1][4][]4}}
+\@writefile{brf}{\backcite{cheng2023sdfusion}{{4}{4}{section*.11}}}
+\@writefile{toc}{\contentsline {paragraph}{Inference Pipeline}{4}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Conclusion, Limitations \& Future Work}{4}{section.5}\protected@file@percent }
+\newlabel{sec:limitations}{{5}{4}{\hskip -1em.~Conclusion, Limitations \& Future Work}{section.5}{}}
+\newlabel{sec:limitations@cref}{{[section][5][]5}{[1][4][]4}}
+\@writefile{toc}{\contentsline {paragraph}{Conclusion}{4}{section*.14}\protected@file@percent }
+\@LN@col{2}
+\newlabel{subfig:limsub1}{{4a}{4}{Input Image\relax }{figure.caption.16}{}}
+\newlabel{subfig:limsub1@cref}{{[subfigure][1][4]4a}{[1][4][]4}}
+\newlabel{sub@subfig:limsub1}{{a}{4}{Input Image\relax }{figure.caption.16}{}}
+\newlabel{sub@subfig:limsub1@cref}{{[subfigure][1][4]4a}{[1][4][]4}}
+\newlabel{subfig:limsub2}{{4b}{4}{Initial Scene Reconstruction\relax }{figure.caption.16}{}}
+\newlabel{subfig:limsub2@cref}{{[subfigure][2][4]4b}{[1][4][]4}}
+\newlabel{sub@subfig:limsub2}{{b}{4}{Initial Scene Reconstruction\relax }{figure.caption.16}{}}
+\newlabel{sub@subfig:limsub2@cref}{{[subfigure][2][4]4b}{[1][4][]4}}
+\newlabel{subfig:limsub3}{{4c}{4}{Final Output\relax }{figure.caption.16}{}}
+\newlabel{subfig:limsub3@cref}{{[subfigure][3][4]4c}{[1][4][]4}}
+\newlabel{sub@subfig:limsub3}{{c}{4}{Final Output\relax }{figure.caption.16}{}}
+\newlabel{sub@subfig:limsub3@cref}{{[subfigure][3][4]4c}{[1][4][]4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Our method struggles with missing and ambiguous semantic/instance labels. As the initial instance segmentation fails to identify the 'Table' object, the corresponding geometry is entirely absent from our reconstruction. Furthermore, since the 'Chair' instance masks overlap with the table geometry, our method generates corresponding instances with incorrect scale and pose.\relax }}{4}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:lim}{{4}{4}{Our method struggles with missing and ambiguous semantic/instance labels. As the initial instance segmentation fails to identify the 'Table' object, the corresponding geometry is entirely absent from our reconstruction. Furthermore, since the 'Chair' instance masks overlap with the table geometry, our method generates corresponding instances with incorrect scale and pose.\relax }{figure.caption.16}{}}
+\newlabel{fig:lim@cref}{{[figure][4][]4}{[1][4][]4}}
+\@writefile{toc}{\contentsline {paragraph}{Limitations}{4}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Future Work}{4}{section*.17}\protected@file@percent }
 \bibcite{cheng2020panoptic}{{3}{2020}{{Cheng et~al.}}{{Cheng, Collins, Zhu, Liu, Huang, Adam, and Chen}}}
 \bibcite{Cheng_2022_CVPR}{{4}{2022}{{Cheng et~al.}}{{Cheng, Misra, Schwing, Kirillov, and Girdhar}}}
 \bibcite{cheng2023sdfusion}{{5}{2023}{{Cheng et~al.}}{{Cheng, Lee, Tulyakov, Schwing, and Gui}}}
@@ -209,25 +244,6 @@
 \bibcite{dai2017shape}{{10}{2017{}}{{Dai et~al.}}{{Dai, Ruizhongtai~Qi, and Nie{\ss }ner}}}
 \bibcite{denninger20203d}{{11}{2020}{{Denninger and Triebel}}{{}}}
 \bibcite{Denninger2023}{{12}{2023}{{Denninger et~al.}}{{Denninger, Winkelbauer, Sundermeyer, Boerdijk, Knauer, Strobl, Humt, and Triebel}}}
-\@LN@col{1}
-\newlabel{subfig:limsub1}{{2a}{4}{Input Image\relax }{figure.caption.14}{}}
-\newlabel{subfig:limsub1@cref}{{[subfigure][1][2]2a}{[1][4][]4}}
-\newlabel{sub@subfig:limsub1}{{a}{4}{Input Image\relax }{figure.caption.14}{}}
-\newlabel{sub@subfig:limsub1@cref}{{[subfigure][1][2]2a}{[1][4][]4}}
-\newlabel{subfig:limsub2}{{2b}{4}{Initial Scene Reconstruction\relax }{figure.caption.14}{}}
-\newlabel{subfig:limsub2@cref}{{[subfigure][2][2]2b}{[1][4][]4}}
-\newlabel{sub@subfig:limsub2}{{b}{4}{Initial Scene Reconstruction\relax }{figure.caption.14}{}}
-\newlabel{sub@subfig:limsub2@cref}{{[subfigure][2][2]2b}{[1][4][]4}}
-\newlabel{subfig:limsub3}{{2c}{4}{Final Output\relax }{figure.caption.14}{}}
-\newlabel{subfig:limsub3@cref}{{[subfigure][3][2]2c}{[1][4][]4}}
-\newlabel{sub@subfig:limsub3}{{c}{4}{Final Output\relax }{figure.caption.14}{}}
-\newlabel{sub@subfig:limsub3@cref}{{[subfigure][3][2]2c}{[1][4][]4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Our method struggles with missing and ambiguous semantic/instance labels. As the initial instance segmentation fails to identify the 'Table' object, the corresponding geometry is entirely absent from our reconstruction. Furthermore, since the 'Chair' instance masks overlap with the table geometry, our method generates corresponding instances with incorrect scale and pose.\relax }}{4}{figure.caption.14}\protected@file@percent }
-\newlabel{fig:lim}{{2}{4}{Our method struggles with missing and ambiguous semantic/instance labels. As the initial instance segmentation fails to identify the 'Table' object, the corresponding geometry is entirely absent from our reconstruction. Furthermore, since the 'Chair' instance masks overlap with the table geometry, our method generates corresponding instances with incorrect scale and pose.\relax }{figure.caption.14}{}}
-\newlabel{fig:lim@cref}{{[figure][2][]2}{[1][4][]4}}
-\@writefile{toc}{\contentsline {paragraph}{Limitations}{4}{section*.13}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Future Work}{4}{section*.15}\protected@file@percent }
-\@LN@col{2}
 \bibcite{devlin2018bert}{{13}{2018}{{Devlin et~al.}}{{Devlin, Chang, Lee, and Toutanova}}}
 \bibcite{fan2017point}{{14}{2017}{{Fan et~al.}}{{Fan, Su, and Guibas}}}
 \bibcite{fu20213d}{{15}{2021{}}{{Fu et~al.}}{{Fu, Cai, Gao, Zhang, Wang, Li, Zeng, Sun, Jia, Zhao, et~al.}}}
@@ -243,6 +259,8 @@
 \bibcite{Kundu_2022_CVPR}{{25}{2022}{{Kundu et~al.}}{{Kundu, Genova, Yin, Fathi, Pantofaru, Guibas, Tagliasacchi, Dellaert, and Funkhouser}}}
 \bibcite{kuo2020mask2cad}{{26}{2020}{{Kuo et~al.}}{{Kuo, Angelova, Lin, and Dai}}}
 \bibcite{li2023mask}{{27}{2023}{{Li et~al.}}{{Li, Zhang, Xu, Liu, Zhang, Ni, and Shum}}}
+\@LN@col{1}
+\@LN@col{2}
 \bibcite{Li_2021_CVPR}{{28}{2021}{{Li et~al.}}{{Li, Zhao, Qi, Wang, Li, Sun, and Jia}}}
 \bibcite{Li_2022_CVPR}{{29}{2022}{{Li et~al.}}{{Li, Wang, Xie, Yu, Anandkumar, Alvarez, Luo, and Lu}}}
 \bibcite{liu2022towards}{{30}{2022}{{Liu et~al.}}{{Liu, Wang, Qi, and Fu}}}
@@ -254,8 +272,6 @@
 \bibcite{oord2017neural}{{36}{2017}{{Oord et~al.}}{{Oord, Vinyals, and Kavukcuoglu}}}
 \bibcite{park2019deepsdf}{{37}{2019}{{Park et~al.}}{{Park, Florence, Straub, Newcombe, and Lovegrove}}}
 \bibcite{radford2021learning}{{38}{2021}{{Radford et~al.}}{{Radford, Kim, Hallacy, Ramesh, Goh, Agarwal, Sastry, Askell, Mishkin, Clark, et~al.}}}
-\@LN@col{1}
-\@LN@col{2}
 \bibcite{shin20193d}{{39}{2019}{{Shin et~al.}}{{Shin, Ren, Sudderth, and Fowlkes}}}
 \bibcite{snavely2006photo}{{40}{2006}{{Snavely et~al.}}{{Snavely, Seitz, and Szeliski}}}
 \bibcite{straub2019replica}{{41}{2019}{{Straub et~al.}}{{Straub, Whelan, Ma, Chen, Wijmans, Green, Engel, Mur-Artal, Ren, Verma, et~al.}}}
@@ -269,5 +285,7 @@
 \bibcite{zhang2023uni}{{49}{2023}{{Zhang et~al.}}{{Zhang, Chen, Wei, and Tu}}}
 \bibcite{zhao2023michelangelo}{{50}{2023}{{Zhao et~al.}}{{Zhao, Liu, Chen, Zeng, Wang, Cheng, Fu, Chen, Yu, and Gao}}}
 \bibcite{Zhou_2021_CVPR}{{51}{2021}{{Zhou et~al.}}{{Zhou, Sun, Wu, Loy, Wang, and Liu}}}
+\@LN@col{1}
+\@LN@col{2}
 \@LN@col{1}
 \@LN@col{2}

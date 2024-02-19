@@ -1,6 +1,13 @@
 \section{Method}
 \label{sec:method}
 
+\begin{figure*}
+  \centering
+  \includegraphics[width=\linewidth]{figs/pipeline.png}
+  \caption{The diagram illustrates the multi-step process of panoptic scene reconstruction, object-level reconstruction, and object-level shape alignment. This includes leveraging Panoptic 3D \citep{dahnert2021panoptic} for initial scene reconstruction, SDFusion \citep{cheng2023sdfusion}  for object shape reconstruction, and a custom registration algorithm for precise alignment of reconstructed objects within the scene.}
+  \label{fig:pipeline}
+\end{figure*}
+
 \subsection{Initial Panoptic Scene Reconstruction}
 
 We leverage Panoptic 3D \citep{dahnert2021panoptic} to predict the camera frustum geometry $\mathbf{X}_{P_{\text{geom}}}$ as well as associated 3D
