@@ -15,33 +15,36 @@ Moreover, noisy instance segmentations pose another challenge, as our scale and 
 Hence, instance segmentations that include parts of other instances or elements of the surrounding environment can lead to the creation of larger, misplaced refined instances.
 A concrete example of this phenomenon is presented in \cref{fig:comparison_bad}.
 
-% \begin{figure}[t]
-%   \centering
-%   \begin{subfigure}{0.3\linewidth} % Adjust the width for three images in one row
-%     \centering
-%     \includegraphics[width=\linewidth]{figs/inputlim.png}
-%     \caption{Input Image}
-%     \label{subfig:limsub1}
-%   \end{subfigure}
-%   \hspace{0.02\linewidth} % Adjust spacing between figures
-%   \begin{subfigure}{0.3\linewidth} % Adjust the width for three images in one row
-%     \centering
-%     \includegraphics[width=\linewidth]{figs/panolim.png}
-%     \caption{Initial Scene Reconstruction}
-%     \label{subfig:limsub2}
-%   \end{subfigure}
-%   \hspace{0.02\linewidth} % Adjust spacing between figures
-%   \begin{subfigure}{0.3\linewidth} % Adjust the width for three images in one row
-%     \centering
-%     \includegraphics[width=\linewidth]{figs/ourslim.png}
-%     \caption{Final Output}
-%     \label{subfig:limsub3}
-%   \end{subfigure}
+\iffalse
+\begin{figure}[t]
+  \centering
+  \begin{subfigure}{0.3\linewidth} % Adjust the width for three images in one row
+    \centering
+    \includegraphics[width=\linewidth]{figs/inputlim.png}
+    \caption{Input Image}
+    \label{subfig:limsub1}
+  \end{subfigure}
+  \hspace{0.02\linewidth} % Adjust spacing between figures
+  \begin{subfigure}{0.3\linewidth} % Adjust the width for three images in one row
+    \centering
+    \includegraphics[width=\linewidth]{figs/panolim.png}
+    \caption{Initial Scene Reconstruction}
+    \label{subfig:limsub2}
+  \end{subfigure}
+  \hspace{0.02\linewidth} % Adjust spacing between figures
+  \begin{subfigure}{0.3\linewidth} % Adjust the width for three images in one row
+    \centering
+    \includegraphics[width=\linewidth]{figs/ourslim.png}
+    \caption{Final Output}
+    \label{subfig:limsub3}
+  \end{subfigure}
 
-%   \caption{Our method struggles with missing and ambiguous semantic/instance labels. As the initial instance segmentation fails to identify the 'Table' object, the corresponding geometry is entirely absent from our reconstruction. Furthermore, since the 'Chair' instance masks overlap with the table geometry, our method generates corresponding instances with incorrect scale and pose.}
-%   \label{fig:lim}
-% \end{figure}
-% \vspace*{-5mm}
+  \caption{Our method struggles with missing and ambiguous semantic/instance labels. As the initial instance segmentation fails to identify the 'Table' object, the corresponding geometry is entirely absent from our reconstruction. Furthermore, since the 'Chair' instance masks overlap with the table geometry, our method generates corresponding instances with incorrect scale and pose.}
+  \label{fig:lim}
+\end{figure}
+\vspace*{-5mm}
+\fi
+
 
 \paragraph{Future Work}
 \label{sec:future}
