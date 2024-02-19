@@ -24,6 +24,7 @@ Hence, we use the pre-trained version of Panoptic 3D for our remaining inference
   \label{tab:2dresults}
 \end{table}
 
+\iffalse
 \begin{figure}[t]
   \centering
   \begin{subfigure}[b]{0.45\linewidth}
@@ -63,6 +64,7 @@ Hence, we use the pre-trained version of Panoptic 3D for our remaining inference
   \caption{2D results from the Panoptic 3D model. Our re-training results (left) vs. results from \citet{dahnert2021panoptic} (right).}
   \label{fig:qual_panoptic}
 \end{figure}
+\fi
 
 \paragraph{Refined Reconstruction}
 
@@ -93,12 +95,14 @@ Moreover, our approach treats each object separately in SDFusion, resulting in d
 In order to align SDFusion to the shape distribution of 3D-Front, we fine-tune the model on a subset of the 3D-Future dataset \citep{fu20213e}, which contains the objects used in the scenes of 3D-Front.
 We train the model for 12k steps using the original hyperparameters from \citet{cheng2023sdfusion} but with a batch size of 32 (see Figure \ref{fig:finetune}).
 
+\iffalse
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{figs/sdfusion_finetune_loss_plot.png}
   \caption{Loss curve of our SDFusion fine-tune (smoothed).}
   \label{fig:finetune}
 \end{figure}
+\fi
 
 \begin{figure}[H]
   \centering
