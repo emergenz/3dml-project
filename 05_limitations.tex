@@ -7,13 +7,12 @@ Moreover, our approach facilitates a straightforward process for generating virt
 An additional advantage of utilizing a multi-modal diffusion model instead of directly leveraging high-quality 3D objects, such as CAD models, is the ability to customize inputs, enabling fine-grained control over the reconstructed scene.
 
 \paragraph{Limitations}
-While our results show promise, it's important to acknowledge certain limitations of our method.
-Firstly, concerns arise regarding object detection.
-While the panoptic reconstruction model doesn't necessarily need to detect an instance to reconstruct its approximate shape, SDFusion is only applied to detected objects.
-As a result, undetected objects and instances erroneously identified as part of another object may be entirely omitted from the refinement process.
-Moreover, noisy instance segmentations pose another challenge, as our scale and position estimations are contingent upon the predicted instance labels.
-Hence, instance segmentations that include parts of other instances or elements of the surrounding environment can lead to the creation of larger, misplaced refined instances.
-A concrete example of this phenomenon is presented in \cref{fig:comparison_bad}.
+While our results show promise, it is important to acknowledge certain limitations of our method.
+Firstly, while Panoptic 3D does not need to detect an instance to reconstruct its approximate shape, SDFusion is only applied to detected objects.
+As a result, undetected objects may be entirely omitted from the refinement process.
+Noisy instance segmentations also pose a challenge, as our scale and position estimations are contingent upon the predicted instance labels.
+Hence, instance segmentations that include parts of other instances or elements of the surrounding environment can lead to larger, misplaced refined instances.
+A concrete example of such case is presented in \cref{fig:comparison_bad}.
 
 \iffalse
 \begin{figure}[t]

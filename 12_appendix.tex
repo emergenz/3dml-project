@@ -1,7 +1,7 @@
 \section{Appendix Section}
 \label{sec:appendix_section}
 
-\subsection{Additional SDFusion Fine-tuning results}
+\subsection{Additional SDFusion fine-tuning results}
 \label{sec:appendic_fine_tuning}
 
 \iffalse
@@ -34,9 +34,14 @@
   \label{fig:short-b}
 \end{figure}
 
+The loss curve in \cref{fig:finetune} shows that the fine-tuning process was successful. The results of the fine-tuning process are shown in \cref{fig:short-b}.
+We used the conversion procedure from \citet{cheng2023sdfusion} to convert the object meshes from the dataset to signed distance fields.
+We train the model for 12,000 steps using the original hyperparameters from \citet{cheng2023sdfusion} but with a batch size of 32.
+The dataset contains 16,000 samples, hence the 12,000 steps of fine-tuning correspond to 24 epochs with a batch size of 32.
+
 \newpage
 
-\subsection{Additional Panoptic Model Training Results}
+\subsection{Additional Panoptic 3D retraining results}
 
 % \begin{figure*}
 %   \centering
@@ -137,3 +142,6 @@
   \label{subfig:additional}
   \vspace*{-3mm} % Adjust vertical spacing between the caption and the image
 \end{figure}
+
+\subsection{Refined 3D scene inference details}
+The results in \cref{sec:refinedrec} were generated using the pre-trained Panoptic 3D model and our fine-tuned version of SDFusion (6,000 steps checkpoint). 

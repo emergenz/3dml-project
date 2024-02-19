@@ -7,26 +7,31 @@ and individual object identities (instance segmentation) \citep{kirillov2019pano
 have been proposed to solve the task \cite{wang2020axial, cheng2020panoptic, mohan2021efficientps, Li_2021_CVPR, Wang_2021_CVPR, Li_2022_CVPR, Kundu_2022_CVPR, Cheng_2022_CVPR, Yu_2022_CVPR, Xu_2023_CVPR, Chen_2023_ICCV, li2023mask, yu2023convolutions},
 while more recent approaches \citep{Jain_2023_CVPR} try to unify image segmentation in its entirety.
 
+\vspace*{-5mm}
 \paragraph{Single-view 3D reconstruction}
 The work by \citet{snavely2006photo} was the first notable attempt at reconstructing 3D scenes from unordered photo collections. Since then, the field of image-based 3D reconstruction
 has seen a number of advancements, culminating in the task of single-view 3D reconstruction \citep{choy20163d, wang2018pixel2mesh, mescheder2019occupancy, huang2019perspectivenet, shin20193d, denninger20203d, nie2020total3dunderstanding}.
 
+\vfill
 \paragraph{Shape priors}
 \citet{wu2018learning} note that the task of single-view 3D reconstruction is non-deterministic, as there are many 3D shapes that can explain a given single-view input, and propose
 to use shape priors to shape the solution space such that the reconstructed shapes are realistic, but not necessarily the ground truth. Our approach extends the idea of \citet{wu2018learning} to entire 3D scenes.
 
+\vspace*{-5mm}
 \paragraph{3D scene understanding}
 The task of 3D scene understanding and panoptic reconstruction is analogous to its 2D counterpart and aims to infer the 3D structure and semantics of a scene, including the 3D layout, object instances, and their 3D shapes from images \citep{dahnert2021panoptic} or noisy geometry \citep{hou20193d, hou2020revealnet}.
 \citet{dahnert2021panoptic} propose a method -- henceforth called \emph{Panoptic 3D} -- to jointly solve the tasks of 3D scene understanding and single-view 3D reconstruction by lifting features produced by a 2D backbone into a 3D volume of the camera frustrum, and jointly optimizing for geometric reconstruction as well as semantic and instance segmentation. 
 
+\vspace*{-5mm}
 \paragraph{Modality-conditioned shape generation}
 3D generative models represent objects in a variety of modalities, including point clouds \citep{achlioptas2018learning, luo2021diffusion}, occupancy grids \citep{mescheder2019occupancy}, meshes \citep{mo2019structurenet}, and signed distance functions \citep{park2019deepsdf}.
 Furthermore, these models can also be distinguished by the type of input they take, such as incomplete shapes \citep{dai2017shape}, images \citep{fan2017point}, text \citep{liu2022towards, zhao2023michelangelo}, or other modalities \citep{Zhou_2021_CVPR}. 
 Notably, \citet{cheng2023sdfusion} propose \emph{SDFusion}, a 3D object reconstruction method conditioned on images, text and geometrical input.
 
+\vspace*{-5mm}
 \paragraph{Datasets}
 Notable datasets in the field of panoptic 3D reconstruction include ScanNet \citep{dai2017scannet} and Replica \citep{straub2019replica}, which provide rich annotations for scene understanding tasks.
 Another such dataset, 3D-Front \citep{fu20213d}, provides comprehensive coverage of indoor scenes while offering detailed geometric reconstructions as well as semantic and instance segmentation annotations.
 The synthetic 3D dataset contains 6,801 mid-size apartments with 18,797 rooms populated by 3D shapes from the 3D-Future \citep{fu20213e} dataset. The dataset's high-quality data acquisition process ensures accurate representations, establishing it as a valuable resource for advancing research in 3D panoptic reconstruction. 
 
-In an effort to refine the panoptic reconstruction model, we compiled a custom dataset comprising over 24,000 samples. Leveraging the diverse scenes of the 3D Front dataset, we use BlenderProc \citep{Denninger2023} for randomly sampling camera poses and 2D rendering. Utilizing the C++ pipeline from \citet{dahnert2021panoptic}, we generate annotated 3D geometry within the respective camera frustum.
+In an effort to refine Panoptic 3D, we compiled a custom dataset comprising over 24,000 samples. Leveraging the diverse scenes of the 3D Front dataset, we use BlenderProc \citep{Denninger2023} for randomly sampling camera poses and 2D rendering. Utilizing the C++ pipeline from \citet{dahnert2021panoptic}, we generate annotated 3D geometry within the respective camera frustum.
