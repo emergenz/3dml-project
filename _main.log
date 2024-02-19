@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.31)  19 FEB 2024 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.31)  19 FEB 2024 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -709,41 +709,24 @@ File: figs/pipeline.png Graphic file (type png)
 Package pdftex.def Info: figs/pipeline.png  used on input line 6.
 (pdftex.def)             Requested size: 496.85625pt x 127.3795pt.
  [2]) (./04_results.tex
-<images/image1.png, id=206, 1885.0425pt x 990.70125pt>
+
+LaTeX Warning: Reference `fig:lim' on page 1 undefined on input line 3.
+
+<images/image1.png, id=205, 1885.0425pt x 990.70125pt>
 File: images/image1.png Graphic file (type png)
 <use images/image1.png>
 Package pdftex.def Info: images/image1.png  used on input line 73.
 (pdftex.def)             Requested size: 310.13503pt x 162.99002pt.
-<images/image2.png, id=207, 977.6525pt x 990.70125pt>
+<images/image2.png, id=206, 977.6525pt x 990.70125pt>
 File: images/image2.png Graphic file (type png)
 <use images/image2.png>
 Package pdftex.def Info: images/image2.png  used on input line 78.
 (pdftex.def)             Requested size: 159.33542pt x 161.46323pt.
- [3 <./figs/pipeline.png>]
-<images/image4.png, id=230, 1491.5725pt x 1076.02pt>
-File: images/image4.png Graphic file (type png)
-<use images/image4.png>
-Package pdftex.def Info: images/image4.png  used on input line 109.
-(pdftex.def)             Requested size: 1491.56886pt x 1076.0174pt.
-)
-(./05_limitations.tex [4 <./images/image1.png> <./images/image2.png> <./images/
-image4.png>]
-<figs/inputlim.png, id=245, 513.92pt x 383.4325pt>
-File: figs/inputlim.png Graphic file (type png)
-<use figs/inputlim.png>
-Package pdftex.def Info: figs/inputlim.png  used on input line 22.
-(pdftex.def)             Requested size: 71.1415pt x 53.07756pt.
-<figs/panolim.png, id=246, 513.92pt x 423.5825pt>
-File: figs/panolim.png Graphic file (type png)
-<use figs/panolim.png>
-Package pdftex.def Info: figs/panolim.png  used on input line 29.
-(pdftex.def)             Requested size: 71.1415pt x 58.63542pt.
-<figs/ourslim.png, id=247, 513.92pt x 418.56375pt>
-File: figs/ourslim.png Graphic file (type png)
-<use figs/ourslim.png>
-Package pdftex.def Info: figs/ourslim.png  used on input line 36.
-(pdftex.def)             Requested size: 71.1415pt x 57.94067pt.
-) (./_main.bbl (./_main.brf)
+[3 <./figs/pipeline.png>]) (./05_limitations.tex
+
+LaTeX Warning: Reference `fig:lim' on page 1 undefined on input line 16.
+
+) [4 <./images/image1.png> <./images/image2.png>] (./_main.bbl (./_main.brf)
 \tf@brf=\write4
 \openout4 = `_main.brf'.
 
@@ -753,42 +736,53 @@ Overfull \hbox (0.6289pt too wide) in paragraph at lines 73--73
 /m/n/9 (-20) , 34:8282--
  []
 
-[5 <./figs/inputlim.png> <./figs/panolim.png> <./figs/ourslim.png>] [6])
-[7] (./12_appendix.tex
-<figs/sdfusion_finetune_loss_plot.png, id=328, 722.7pt x 433.62pt>
+[5] [6]) [7
+
+] (./12_appendix.tex
+<figs/sdfusion_finetune_loss_plot.png, id=319, 722.7pt x 433.62pt>
 File: figs/sdfusion_finetune_loss_plot.png Graphic file (type png)
 <use figs/sdfusion_finetune_loss_plot.png>
 Package pdftex.def Info: figs/sdfusion_finetune_loss_plot.png  used on input li
-ne 8.
-(pdftex.def)             Requested size: 237.13594pt x 142.2812pt.
-<figs/depth_ours.png, id=329, 115.632pt x 86.724pt>
+ne 25.
+(pdftex.def)             Requested size: 243.46228pt x 146.07909pt.
+<images/image4.png, id=320, 1491.5725pt x 1076.02pt>
+File: images/image4.png Graphic file (type png)
+<use images/image4.png>
+Package pdftex.def Info: images/image4.png  used on input line 32.
+(pdftex.def)             Requested size: 243.46228pt x 175.63107pt.
+<figs/depth_ours.png, id=321, 115.632pt x 86.724pt>
 File: figs/depth_ours.png Graphic file (type png)
 <use figs/depth_ours.png>
-Package pdftex.def Info: figs/depth_ours.png  used on input line 19.
-(pdftex.def)             Requested size: 106.71045pt x 80.03712pt.
-<figs/depth_pan.png, id=330, 115.632pt x 86.724pt>
+Package pdftex.def Info: figs/depth_ours.png  used on input line 46.
+(pdftex.def)             Requested size: 109.55728pt x 82.17162pt.
+<figs/depth_pan.png, id=322, 115.632pt x 86.724pt>
 File: figs/depth_pan.png Graphic file (type png)
 <use figs/depth_pan.png>
-Package pdftex.def Info: figs/depth_pan.png  used on input line 27.
-(pdftex.def)             Requested size: 106.71045pt x 80.03712pt.
-<figs/depthply_ours.png, id=333, 1014.79124pt x 615.80063pt>
+Package pdftex.def Info: figs/depth_pan.png  used on input line 54.
+(pdftex.def)             Requested size: 109.55728pt x 82.17162pt.
+<figs/depthply_ours.png, id=325, 1014.79124pt x 615.80063pt>
 File: figs/depthply_ours.png Graphic file (type png)
 <use figs/depthply_ours.png>
-Package pdftex.def Info: figs/depthply_ours.png  used on input line 37.
-(pdftex.def)             Requested size: 106.71045pt x 64.75023pt.
-<figs/depthply_pan.png, id=334, 1014.79124pt x 615.80063pt>
+Package pdftex.def Info: figs/depthply_ours.png  used on input line 64.
+(pdftex.def)             Requested size: 109.55728pt x 66.47916pt.
+<figs/depthply_pan.png, id=326, 1014.79124pt x 615.80063pt>
 File: figs/depthply_pan.png Graphic file (type png)
 <use figs/depthply_pan.png>
-Package pdftex.def Info: figs/depthply_pan.png  used on input line 45.
-(pdftex.def)             Requested size: 106.71045pt x 64.75023pt.
+Package pdftex.def Info: figs/depthply_pan.png  used on input line 72.
+(pdftex.def)             Requested size: 109.55728pt x 66.47916pt.
+<figs/depthloss.png, id=331, 1471.4975pt x 757.83125pt>
+File: figs/depthloss.png Graphic file (type png)
+<use figs/depthloss.png>
+Package pdftex.def Info: figs/depthloss.png  used on input line 84.
+(pdftex.def)             Requested size: 243.46228pt x 125.38367pt.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
  [8
 
 
- <./figs/sdfusion_finetune_loss_plot.png> <./figs/depth_ours.png> <./figs/depth
-_pan.png> <./figs/depthply_ours.png (PNG copy)> <./figs/depthply_pan.png (PNG c
-opy)>]
+ <./figs/sdfusion_finetune_loss_plot.png> <./images/image4.png> <./figs/depth_o
+urs.png> <./figs/depth_pan.png> <./figs/depthply_ours.png (PNG copy)> <./figs/d
+epthply_pan.png (PNG copy)> <./figs/depthloss.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
  (./_main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
@@ -796,16 +790,20 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `_main.out' has not changed.
 (rerunfilecheck)             Checksum: DAAFADAD01514F179A4E678314154FC2;748.
 Package rerunfilecheck Info: File `_main.brf' has not changed.
-(rerunfilecheck)             Checksum: FFC5F46FDDC2C82D7D73A9FD8835E7D9;3859.
+(rerunfilecheck)             Checksum: 3C764C5D7EE498295597AC7C26906EC4;3859.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 14910 strings out of 481239
- 240467 string characters out of 5920377
+ 14886 strings out of 481239
+ 240028 string characters out of 5920377
  562641 words of memory out of 5000000
- 29422 multiletter control sequences out of 15000+600000
+ 29402 multiletter control sequences out of 15000+600000
  578980 words of font info for 308 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,11n,49p,1043b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,11n,49p,1043b,637s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
@@ -821,10 +819,10 @@ xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on _main.pdf (8 pages, 78383817 bytes).
+Output written on _main.pdf (8 pages, 79826870 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 364 compressed objects within 4 object streams
- 96 named destinations out of 1000 (max. 500000)
- 34453 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 426 PDF objects out of 1000 (max. 8388607)
+ 360 compressed objects within 4 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 34443 words of extra memory for PDF output out of 35830 (max. 10000000)
 
